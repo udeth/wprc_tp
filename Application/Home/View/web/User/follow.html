@@ -1,0 +1,70 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<script type="text/javascript" src="__APP__/Public/static/js/jquery.js"></script>
+	<title>网评潮流-登陆</title>
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+			text-decoration:none;
+			list-style:none;
+		}
+		a{color:#000;}
+		body{
+			font-size: 16px;
+			width:1004px;
+			font-family: "Microsoft YaHei";
+			margin:0 auto;
+			position:relative;
+			background: white;
+		}
+	</style>
+	</head>
+	<body>
+<div style="width:96%;margin:0 auto">
+		<div style="height:100px;width:100%;">
+			<a href="__APP__/home"><img src="__APP__/Public/static/img/web_logo_small.jpg"></a>
+		</div>
+		<div style="height:40px;line-height:40px;background:#CA3F44;width:100%;color:white;margin-bottom:15px;">
+			<?php if($_GET['uid']>0){ ?>{$user}-<?php } ?>
+		<?php if($type==1){ ?>关注列表<?php }else{ ?>被关注列表<?php } ?>
+		</div>
+	<!-- <volist name="followList" id="list"> -->
+	<div>
+		<div style="position:relative;height:60px;">
+		<a href="__APP__/home/user/userIntro?uid={$list.uid}"><img src="__APP__/Uploads/Picture/User/{$list.image}" class="touxiang" style="position:absolute;height:50px;width:50px;"></a>
+		<span style="position:absolute;left:60px">昵称：{$list.name}</span>
+		<!-- <span style="position:absolute;left:180px">性别：<?php if($list['sex']==0){echo "女";}else{echo "男";} ?></span> -->
+		<span style="position:absolute;left:60px;top:30px">关注：{$list.follow_count}</span><span style="position:absolute;left:160px;top:30px;">被关注：{$list.fans_count}</span>
+		<div style="display:none" class="id">{$list.uid}</div>
+		<button class="add_follow" uid="{$list.wangping.uid}" style="position:absolute;right:0px;top:15px"><?php if($list['myfollow']==1){ echo "取消关注";}elseif($list['myfollow']==0){echo "+关注";}else{ echo "自己"; } ?></button>
+		<div style="clear:both"></div>
+		</div>
+	</div>
+	<!-- </volist> -->
+</div>
+<script type="text/javascript">
+	$('.add_follow').click(function(){
+		if($(this).text()=='自己'){
+			return false;
+		}else{
+			var act;//="<?php if($type==0){echo 'add';}else{echo 'del';} ?>";
+			if($(this).text()=='取消关注'){
+				act='del';
+			}else{
+				act='add';
+			}
+			var id=$(this).prev().text();
+	 		$.post("__APP__/home/act/follow",{id:id,act:act},function(data){
+	 			alert(data.msg);
+	 			if(data.status==1){
+	 				window.location.href=window.location.href;
+	 			}
+	 		},'json');
+ 		}
+ 	// alert($(this).text());
+	});
+</script>
+
+<include file="Public:footer"/>

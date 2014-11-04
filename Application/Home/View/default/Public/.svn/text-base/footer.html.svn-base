@@ -1,0 +1,17 @@
+<script type="text/javascript">
+	
+</script>
+
+<?php if($_SESSION['think_loginInfo']||$_COOKIE['think_loginInfo']){}else{ ?>
+<div style="position:fixed;background:rgba(255, 0, 0,0.5);height:60px;z-index:999;bottom:0;width:100%;min-width:320px;max-width:768px;">
+	<p style="float:left;color:white;margin-left:5%"><span style="font-size:20px;">留下</span>你的购物<span style="font-size:20px;">差评</span></p>
+	<div style="clear:both"></div>
+	<p style="float:left;color:white;margin-left:15%">让别人买前<span style="font-size:20px;">查一查</span></p>
+	<p style="margin-right:20px;margin-top:-10px;z-index:1000;text-align:right">
+		<a href="__APP__/home/user/login"><span style="background:red;border-radius:3px;padding:5px 10px">登陆</span></a>
+		<a href="__APP__/home/user/insert"><span style="background:orange;border-radius:3px;padding:5px 10px">注册</span></a>
+	</p>
+</div>
+<?php } ?>
+</body>
+</html>

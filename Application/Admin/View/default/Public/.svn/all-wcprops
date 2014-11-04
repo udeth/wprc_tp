@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/www.wprc.com/!svn/ver/12/Application/Admin/View/default/Public
+END
+exception.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/www.wprc.com/!svn/ver/1/Application/Admin/View/default/Public/exception.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/www.wprc.com/!svn/ver/1/Application/Admin/View/default/Public/login.html
+END
+success.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/www.wprc.com/!svn/ver/1/Application/Admin/View/default/Public/success.html
+END
+error.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/www.wprc.com/!svn/ver/1/Application/Admin/View/default/Public/error.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/www.wprc.com/!svn/ver/12/Application/Admin/View/default/Public/base.html
+END

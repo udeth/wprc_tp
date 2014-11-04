@@ -1,0 +1,1528 @@
+[ 2014-09-11T00:09:00+08:00 ] 218.241.97.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.002446s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000144s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000852s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000114s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000834s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002361s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000848s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002356s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.023347s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000252s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000268s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000229s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000237s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000271s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000278s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000219s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000210s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000216s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2014-09-11T01:21:04+08:00 ] 183.136.190.55 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.002430s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000151s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000898s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000121s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000875s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002308s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000917s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002215s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000252s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000211s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000214s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000245s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000204s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000207s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000298s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000454s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000235s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000203s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000629s ]
+
+[ 2014-09-11T03:31:39+08:00 ] 183.136.190.36 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.003068s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000140s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000898s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000118s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000805s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002411s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000834s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002293s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000277s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000212s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000232s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000205s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000201s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000244s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000198s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000201s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000219s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000198s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2014-09-11T04:17:32+08:00 ] 54.87.37.196 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.001262s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000128s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000842s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000113s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000804s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002482s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000913s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002425s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000259s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000235s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000214s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000204s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000290s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000209s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000200s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000223s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000212s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000198s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2014-09-11T05:03:07+08:00 ] 42.120.145.79 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.002082s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000145s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.001007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000144s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000938s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002337s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000836s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002301s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000224s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000282s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000206s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000200s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000240s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000200s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000197s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000202s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000197s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2014-09-11T05:41:31+08:00 ] 183.136.190.62 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.007578s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000188s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000860s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000128s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000904s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002712s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000914s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002324s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000251s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000213s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000239s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000297s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000269s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000210s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000210s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000245s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000202s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2014-09-11T06:03:44+08:00 ] 42.120.145.122 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000988s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000141s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000841s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000112s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000890s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002382s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000851s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002197s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000244s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000212s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000208s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000279s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000288s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000245s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000212s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000201s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000369s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000214s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2014-09-11T06:11:14+08:00 ] 183.136.190.62 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000882s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000130s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000835s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000114s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000810s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002293s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000847s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002171s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000241s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000231s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000207s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000203s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000204s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000200s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000200s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000248s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000198s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2014-09-11T06:11:14+08:00 ] 183.136.190.62 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000962s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000151s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000827s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000133s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000892s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002395s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000850s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002673s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000231s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000275s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000231s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000228s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000227s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000203s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000207s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000235s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000240s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2014-09-11T06:11:14+08:00 ] 183.136.190.62 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000899s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000127s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000834s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000115s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000827s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002301s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000838s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002160s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000225s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000213s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000244s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000209s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000237s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000248s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000204s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000225s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000212s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2014-09-11T06:45:27+08:00 ] 38.100.21.65 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000966s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000148s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000882s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000110s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000806s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002330s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.001352s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002300s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000230s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000254s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000236s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000213s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000249s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000229s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000204s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000248s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000216s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000203s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000386s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2014-09-11T06:45:28+08:00 ] 38.100.21.65 /home/act/reviewInfo?id=242
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.001024s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000127s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000852s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000118s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.001578s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.001362s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=242 and pid=0 ) LIMIT 1   [ RunTime:0.248027s ]
+NOTIC: [2] Division by zero /data/nginx/html/www_wprc365_com/Application/Lib/Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P /data/nginx/html/www_wprc365_com/Application/Lib/Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=242 and think_review.checked=1 limit 1 [ RunTime:0.000690s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=242 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.001094s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=242 and think_reply.pid in () order by think_reply.time asc [ RunTime:0.026436s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by think_reply.time asc' at line 1
+ [ SQL语句 ] : select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=242 and think_reply.pid in () order by think_reply.time asc
+NOTIC: [2] Invalid argument supplied for foreach() /data/nginx/html/www_wprc365_com/Application/Home/Model/ReviewModel.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000934s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=242 )  [ RunTime:0.000261s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000707s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=67 )  [ RunTime:0.000116s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=67 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=67 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000809s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000100s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+ERR: 模板不存在:./Application/Home/View/web/Act/reviewinfo.html
+
+[ 2014-09-11T06:45:29+08:00 ] 38.100.21.65 /home/user/userIntro?uid=59
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.001155s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000124s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000842s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000110s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000689s ]
+SQL: SELECT * FROM `think_follow` WHERE ( uid=59 and flollow_id= ) LIMIT 1   [ RunTime:0.000103s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( uid=59 and flollow_id= ) LIMIT 1  
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=59 [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000904s ]
+SQL: select * from think_review where uid=59 and checked=1 order by time desc limit 0,5 [ RunTime:0.000314s ]
+SQL: select thumb_img,rid from think_review_img where rid in (select * from (select id from think_review where uid=59 and checked=1 order by time desc limit 0,5) as t) [ RunTime:0.039974s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/9227b641c6aade2fece49e7bb7c65dd3.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2014-09-11T06:45:29+08:00 ] 38.100.21.65 /home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000909s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000125s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000819s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000111s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000794s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002355s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000856s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002263s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000235s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000220s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000231s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000205s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000201s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000200s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000263s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000216s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000221s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000235s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2014-09-11T06:45:30+08:00 ] 38.100.21.65 /home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.001055s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000135s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000887s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000124s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000949s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.003013s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000940s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002929s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000318s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000214s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000240s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000204s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000221s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000239s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000202s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000198s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000233s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000199s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2014-09-11T06:45:31+08:00 ] 38.100.21.65 /home/index/findUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.001431s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000177s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.001578s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000114s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+ERR: 非法操作:finduser
+
+[ 2014-09-11T06:45:31+08:00 ] 38.100.21.65 /home/act/addreview
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000948s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000124s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.001388s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000128s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+
+[ 2014-09-11T06:45:31+08:00 ] 38.100.21.65 /home/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000985s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000122s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000884s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000111s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/0cb2c810e45c0de70ccc3882a87c4a20.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2014-09-11T06:45:32+08:00 ] 38.100.21.65 /home/user/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.001334s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000185s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000957s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000126s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/8575aa8df0fbe4caeea6f484b89ea348.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2014-09-11T06:45:32+08:00 ] 38.100.21.65 /home/index/searchIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.001329s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000168s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000884s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000144s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+ERR: 模板不存在:./Application/Home/View/web/Index/searchindex.html
+
+[ 2014-09-11T06:57:35+08:00 ] 183.136.190.36 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.001404s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000154s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000874s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000126s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000904s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002538s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000898s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002223s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000243s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000219s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000210s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000226s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000208s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000218s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000221s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000204s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000201s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000217s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2014-09-11T08:10:39+08:00 ] 157.55.39.211 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.001015s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000141s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000894s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000119s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000849s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002896s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000866s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002219s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000272s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000210s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000205s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000249s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000202s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000197s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000358s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000435s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000239s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000215s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2014-09-11T09:16:59+08:00 ] 42.120.145.250 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004646s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000995s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000141s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.001070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000115s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000837s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002455s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000927s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002395s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.026474s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000231s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000218s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000247s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000207s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000210s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000239s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000204s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000206s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000206s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000354s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000453s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003890s ]
+
+[ 2014-09-11T09:55:07+08:00 ] 220.181.108.83 /home/act/reviewInfo?id=218
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.001105s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000130s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000883s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000129s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.001245s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=218 and pid=0 ) LIMIT 1   [ RunTime:0.000335s ]
+NOTIC: [2] Division by zero /data/nginx/html/www_wprc365_com/Application/Lib/Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P /data/nginx/html/www_wprc365_com/Application/Lib/Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=218 and think_review.checked=1 limit 1 [ RunTime:0.000463s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=218 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.001134s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=218 and think_reply.pid in (60,63,67,71,75,78) order by think_reply.time asc [ RunTime:0.028900s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000774s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=218 )  [ RunTime:0.000302s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000860s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=50 )  [ RunTime:0.000225s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=50 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=50 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000897s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000126s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero /data/nginx/html/www_wprc365_com/Application/Lib/Page.class.php 第 90 行.
+ERR: 模板不存在:./Application/Home/View/web/Act/reviewinfo.html
+
+[ 2014-09-11T10:46:00+08:00 ] 142.4.217.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000974s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000125s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.001006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000123s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000905s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.027303s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000844s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002293s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000221s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000206s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000245s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000199s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000204s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000255s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000226s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000207s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000216s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002374s ]
+
+[ 2014-09-11T11:57:41+08:00 ] 42.120.145.76 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.002682s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000180s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000890s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000115s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000877s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002302s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000853s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002604s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000267s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000225s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000296s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000516s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000252s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000203s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000212s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000220s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000201s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.039876s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.039951s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002117s ]
+
+[ 2014-09-11T14:23:34+08:00 ] 192.99.39.78 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.073243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.073344s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.027262s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000147s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000857s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000114s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000869s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.025446s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000849s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002591s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.002144s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000234s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000206s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000245s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000234s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000198s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000223s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000220s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000198s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000201s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000300s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002407s ]
+
+[ 2014-09-11T14:37:07+08:00 ] 183.1.68.63 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.002085s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000154s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.001148s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000134s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000954s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002756s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.001078s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002585s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000240s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000806s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000216s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000256s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000215s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000205s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000253s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000618s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000256s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: loginInfo /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 245 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 245 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2014-09-11T14:48:33+08:00 ] 66.249.69.196 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.001106s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000136s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000862s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000115s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000837s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002576s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000946s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002227s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000233s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000210s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000210s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000263s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000293s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000262s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000214s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000208s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000261s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000217s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined index: loginInfo /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 245 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 245 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2014-09-11T15:07:27+08:00 ] 61.135.190.224 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.002421s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000162s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000952s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000131s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000904s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002443s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.001619s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002598s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000275s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000254s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000206s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000235s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000246s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000199s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000214s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000283s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000227s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000221s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2014-09-11T15:39:38+08:00 ] 220.181.108.80 /home/user/userIntro?uid=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.001279s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000138s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000877s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000115s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000721s ]
+SQL: SELECT * FROM `think_follow` WHERE ( uid=53 and flollow_id= ) LIMIT 1   [ RunTime:0.000104s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( uid=53 and flollow_id= ) LIMIT 1  
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=53 [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.001186s ]
+SQL: select * from think_review where uid=53 and checked=1 order by time desc limit 0,5 [ RunTime:0.000362s ]
+SQL: select thumb_img,rid from think_review_img where rid in (select * from (select id from think_review where uid=53 and checked=1 order by time desc limit 0,5) as t) [ RunTime:0.044562s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/9227b641c6aade2fece49e7bb7c65dd3.php 第 82 行.
+NOTIC: [8] Undefined index: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/9227b641c6aade2fece49e7bb7c65dd3.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2014-09-11T15:39:38+08:00 ] 220.181.108.185 /home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000979s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000142s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000845s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000112s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/UserController.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2014-09-11T15:50:34+08:00 ] 207.46.13.16 /home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.003671s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000150s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000901s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000141s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.001028s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.003455s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.001083s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002410s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000223s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000211s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000243s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000202s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000199s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000222s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000199s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000197s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000206s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000233s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2014-09-11T16:43:18+08:00 ] 130.185.139.213 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.002765s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000163s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000853s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000150s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000857s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002385s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000862s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002813s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000226s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000237s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000210s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000205s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000229s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000227s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000202s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000222s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000201s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2014-09-11T16:43:44+08:00 ] 130.185.139.213 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.001374s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000153s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000916s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000117s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000859s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002463s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000835s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002273s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000228s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000263s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000206s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000219s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000271s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000318s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000286s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000213s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000206s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2014-09-11T16:44:17+08:00 ] 130.185.139.213 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.001746s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000184s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000841s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000138s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000832s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.002558s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000913s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002241s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000266s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000206s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000219s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000251s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000210s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000216s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000246s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000198s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000208s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2014-09-11T21:16:07+08:00 ] 157.55.39.212 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002528s ]
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+NOTIC: [8] Undefined index: think_loginInfo /data/nginx/html/www_wprc365_com/Application/Home/Controller/CommonController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.112514s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000171s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.001323s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000308s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000957s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.043122s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000921s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.002397s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.002671s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000246s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000389s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000257s ]
+SQL: select `thumb_img` from think_review_img where rid=234 [ RunTime:0.000223s ]
+SQL: select `thumb_img` from think_review_img where rid=242 [ RunTime:0.000433s ]
+SQL: select `thumb_img` from think_review_img where rid=241 [ RunTime:0.000245s ]
+SQL: select `thumb_img` from think_review_img where rid=240 [ RunTime:0.000220s ]
+SQL: select `thumb_img` from think_review_img where rid=239 [ RunTime:0.000211s ]
+SQL: select `thumb_img` from think_review_img where rid=238 [ RunTime:0.000215s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+NOTIC: [8] Undefined variable: name /data/nginx/html/www_wprc365_com/Runtime/Cache/Home/4ecb4d80ad15ce616466b3a831676d8e.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001965s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003960s ]
+

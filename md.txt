@@ -1,0 +1,92 @@
+数据库名为www.wprc.com
+登录用户、密码为
+admin
+admin
+
+需要自行在 ThinkPHP 目录下放3.2.1包
+后台主要功能：
+1、用户Passport系统
+2、配置管理系统
+3、权限控制系统
+4、多级分类系统
+5、用户行为系统
+6、系统日志系统
+
+
+
+菜单配置
+
+后台首页
+
+用户
+    用户管理
+            用户信息
+            用户行为
+            
+            
+    权限管理
+            角色组管理
+                访问
+                分类
+                成员
+                
+    日志管理
+            行为日志   
+            
+            
+配置
+    配置管理
+            网站设置
+            配置内容
+            
+系统
+    菜单导航
+            菜单管理
+            导航管理
+ 
+            
+            
+
+        
+控制器       
+
+ActionController.class      行为控制器
+AdminController.class       后台公共控制器
+AuthManager.class           权限管理
+ChannelController.class     导航管理
+ConfigController.class      后台配置控制器 
+IndexController.class       后台首页
+MenuController.class        菜单管理
+Public.class                登录页
+User.class                  用户管理
+
+
+
+模型
+ActionModel.class
+AuthGroupModel.class
+AuthRuleModel.class
+Channel.class
+ConfigModel.class
+CategoryModel.class
+MemberModel.class
+MenuModel.class
+TreeModel.class
+
+
+public目录，新增的内容
+css
+js
+font-awesome
+
+
+
+QQ:2084608872
+密码:gzbc123
+
+微博:2084608872@qq.com
+密码:gzbc123
+           
+微博
+App Key：2396543300
+App Sercet：c9460bf5a638c55482d1b2f3d41edbd6

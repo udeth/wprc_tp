@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/www.wprc.com/!svn/ver/66/Application/Lib/PHPMailer/docs/phpdoc/classes
+END
+phpmailerException.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/www.wprc.com/!svn/ver/66/Application/Lib/PHPMailer/docs/phpdoc/classes/phpmailerException.html
+END
+PHPMailer.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/www.wprc.com/!svn/ver/66/Application/Lib/PHPMailer/docs/phpdoc/classes/PHPMailer.html
+END
+POP3.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/www.wprc.com/!svn/ver/66/Application/Lib/PHPMailer/docs/phpdoc/classes/POP3.html
+END
+SMTP.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/www.wprc.com/!svn/ver/66/Application/Lib/PHPMailer/docs/phpdoc/classes/SMTP.html
+END

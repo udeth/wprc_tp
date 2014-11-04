@@ -1,0 +1,42 @@
+<script type="text/javascript">
+	
+</script>
+
+<?php if($_SESSION['loginInfo']||$_COOKIE['think_loginInfo']){}else{ ?>
+<div id="public_close" style="position:fixed;background:rgba(200, 200, 200,0.7);height:25px;z-index:999;bottom:60px;width:50px;text-align:center;right:0">
+关闭
+</div>
+<div id="public_foot" style="position:fixed;background:rgba(255, 0, 0,0.5);height:60px;z-index:999;bottom:0;width:100%;min-width:320px;max-width:768px;">
+	<p style="float:left;color:white;margin-left:5%">给<span style="font-size:20px;">奸商</span>一个<span style="font-size:20px;">差评</span></p>
+	<div style="clear:both"></div>
+	<p style="float:left;color:white;margin-left:15%">给自己一个<span style="font-size:20px;">机会</span></p>
+	<p style="margin-right:20px;margin-top:-10px;z-index:1000;text-align:right">
+		<a href="__APP__/home/user/login"><span style="background:red;border-radius:3px;padding:5px 10px">登陆</span></a>
+		<a href="__APP__/home/user/insert"><span style="background:orange;border-radius:3px;padding:5px 10px">注册</span></a>
+	</p>
+</div>
+<?php } ?>
+<script type="text/javascript">
+// window.onscroll = function (){
+// 	var marginBot = 0;
+// 	if (document.documentElement.scrollTop){
+// 		marginBot = document.documentElement.scrollHeight - (document.documentElement.scrollTop+document.body.scrollTop)-document.documentElement.clientHeight;
+// 	} else {
+// 		marginBot = document.body.scrollHeight - document.body.scrollTop- document.body.clientHeight;
+// 	}
+// 	if(marginBot<=0) {
+// 		$('#public_foot').hide();
+// 	}else{
+// 		$('#public_foot').show();
+// 	}
+// }
+
+$('#public_close').click(function(){
+	$('#public_close').hide();
+	$('#public_foot').hide();
+})
+
+
+</script>
+</body>
+</html>

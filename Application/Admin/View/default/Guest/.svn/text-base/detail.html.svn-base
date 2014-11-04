@@ -1,0 +1,77 @@
+<extend name="Public/base"/>
+
+<block name="body">
+
+	<div class="main-title">
+		<h2>{$meta_title}</h2>
+	</div>
+	<div class="container-span">
+		<div class="span2" style="width:48%; float:left;">
+			<div class="columns-mod">
+				<div class="hd cf"><h5>基本信息</h5></div>
+				<div class="bd" style="height:auto;">
+					<div class="sys-info">
+						<table>
+							<tr><td width="120"><img src="{$info.image}"></td><td></td></tr>
+							<tr><td>账号名：</td><td>{$info.account}</td></tr>
+							<tr><td>邮  箱：</td><td>{$info.email}</td></tr>
+							<tr><td>别  称：</td><td>{$info.name}</td></tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-item" style="margin:10px 0 0 0;">
+				<eq name="info.status" value="1">
+				<a class=" ajax-get btn submit-btn" title="禁用" href="{:U('changeStatus?method=delete&id='.$info['id'])}">禁用</a>
+				<else/>
+				<a class=" ajax-get btn submit-btn" title="启用" href="{:U('changeStatus?method=resume&id='.$info['id'])}">启用</a>
+				</eq>
+				<button class="btn btn-return" onclick="javascript:history.back(-1);return false">返回</button>
+			</div>
+		</div>
+
+		<div class="span2" style="width:48%; float:right;">
+			<div class="columns-mod">
+				<div class="hd cf"><h5>详细信息</h5></div>
+				<div class="bd" style="height:auto;">
+					<div class="sys-info">
+						<table>
+							<tr><td width="120">签  名：</td><td>{$info.introduction}</td></tr>
+							<tr><td>性  别：</td><td>{$info.sex_text}</td></tr>
+							<tr><td>地  址：</td><td>{$info.province}{$info.city}{$info.district}</td></tr>
+							<tr><td>上次登入IP：</td><td>{$info.ip}</td></tr>
+							<tr><td>上次登入时间：</td><td>{$info.time|date="Y-m-d H-i-s",###}</td></tr>
+							<tr><td>账号状态：</td><td>{$info.status_text}</td></tr>
+							<tr><td colspan="2"><button class="btn showFav">收藏记录</button></td></tr>
+							<tr class="favor"><td colspan="2"><p class="favor" style="width:750px; word-wrap: break-word; break-word: break-all;">{$info.favorites}</p></td></tr>
+							<script>
+							$(function(){
+								$(".favor").hide();
+								$(".showFav").click(function(){
+									$(".favor").slideToggle();
+								})
+							});
+							</script>
+							<tr><td>关注人数：</td><td>{$info.follow_count}</td></tr>
+							<tr><td>被关注人数：</td><td>{$info.fans_count}</td></tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
+
+	
+
+
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+        //导航高亮
+		highlight_subnav('{:U('Guest/index')}');
+	</script>
+</block>

@@ -1,0 +1,41 @@
+<extend name="Public/base"/>
+
+<block name="style">
+	<script src="__STATIC__/jquery.MultiFile.js" type="text/javascript"></script>
+</block>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{$meta_title}</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal" enctype="multipart/form-data">
+    	<notempty name="zhuanqu">
+			<input type="hidden" class="text input-large" name="id" value="{$zhuanqu.id|default=""}" />
+		</notempty>
+        <div class="form-item">
+            <label class="item-label">专区名称</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="zhuanqu_name" value="{$zhuanqu.zhuanqu_name|default=""}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">排序</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="sort" value="{$zhuanqu.sort|default=""}">
+            </div>
+        </div>
+		
+		
+        <div class="form-item">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav('{:U('Zhuanqu/index')}');
+    </script>
+</block>

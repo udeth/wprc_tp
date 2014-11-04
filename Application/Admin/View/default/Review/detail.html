@@ -1,0 +1,111 @@
+<extend name="Public/base"/>
+
+<block name="style">
+	<style type="text/css">
+		#detail th{
+			width:100px;
+		}
+		#detail img.small{
+			height:150px;
+		}
+	</style>
+</block>
+
+<block name="script">
+	<script type="text/javascript" src="__STATIC__/picbox/js/picbox.js"></script>
+	<link rel="stylesheet" href="__STATIC__/picbox/css/picbox.css" type="text/css" media="screen" />
+    <script type="text/javascript">
+		Think.setValue("checked", {$data.checked|default = 0});	// 是否已审核
+        highlight_subnav('{:U('Review/index')}');	// 导航高亮
+		window.onload = function(){ 
+			$('#detail img').each( function(index, element){
+				if( $(element).height() > 150 )
+					$(element).addClass( 'small' );
+			} );
+		}
+		
+    </script>
+</block>
+
+
+<block name="body">
+    <div class="main-title">
+        <h2>网评审核</h2>
+    </div>
+	<div class="data-table table-striped">
+    <form action="{:U()}" method="post" class="form-horizontal" enctype="multipart/form-data">
+	<div class="form-item">
+		<table id="detail" class="">
+			<tr>
+				<th>用户名</th>
+				<td>{$data.user_name}</td>
+				<th>时间</th>
+				<td>{$data.time}</td>
+			</tr>
+			<tr>
+				<th>产品名</th>
+				<td>{$data.product_name}</td>
+				<th>产品类别</th>
+				<td>{$data.product_category_name}</td>
+			</tr>
+			<tr>
+				<th>店名</th>
+				<td>{$data.store_name}</td>
+				<th>店铺类型</th>
+				<td>{$data.store_type}</td>
+			</tr>
+			<tr>
+				<th>网址/地址</th>
+				<td>{$data.address}</td>
+				<th>省、市、区</th>
+				<td>
+					<notempty name="data.province">
+					{$data.province}、{$data.city}、{$data.district}
+					</notempty>
+				</td>
+			</tr>
+			<tr>
+				<th>店名</th>
+				<td>{$data.store_name}</td>
+				<th>店铺类型</th>
+				<td>{$data.store_type}</td>
+			</tr>
+			<tr>
+				<th>推荐/热门</th>
+				<td>{$data.hot}</td>
+				<th>评论数</th>
+				<td>{$data.comment_count}</td>
+			</tr>
+			<tr>
+				<th>审核</th>
+				<td colspan="3" >{$data.checkedtext}</td>
+			</tr>
+			<tr>
+				<th>网评内容</th>
+				<td colspan="3">{$data.content}</td>
+			</tr>
+			<tr>
+				<th>网评凭证</th>
+				<td colspan="3" >
+					<a rel="lightbox-1" href="__ROOT__/Uploads/{$data.image}">
+						<img src="__ROOT__/{$data.image}" />
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<th>附加图片</th>
+				<td colspan="3" >
+				<volist name="imglist" id="vo">
+					<a href="__ROOT__/{$vo.image}" rel="lightbox-2"><img src="__ROOT__/{$vo.image}" /></a>&nbsp;&nbsp;&nbsp;
+				</volist>
+				</td>
+			</tr>
+		</table>
+		</div>
+        <div class="form-item">
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+	</div>
+</block>
+

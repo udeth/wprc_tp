@@ -1,0 +1,131 @@
+<include file="Public/header" />
+		<div class="review_tab"><!-- 发布差评切换 Begin -->
+			<div class="review_tab_on">网址差评</div>
+			<div class="review_tab_off">实店差评</div>
+		</div><!-- 发布差评切换 End -->
+		<img id="my_xia" src="__APP__/Public/static/img/my_xia.jpg" style="width:20px;height:7px;margin-left:22%;margin-bottom:15px;margin-top:-3px">
+
+		<div class="review_main"><!-- 发布内容 Begin -->
+
+			<p>附加图片<input type="file" id="houseMaps" name="aaa[]" multiple="multiple" accept="image/*" /></p>
+			<p class="review_intro">1.支持jpg、png格式</p>
+			<p class="review_intro">2.图片不能超过2M的大小</p>
+			<div><input placeholder="" type="text" id="tit" name="" class="shitiName"></div>
+			<div><input id="product" placeholder="请输入商品名称" type="text" id="tit" name="" class="shitiName"></div>
+			
+			<div id="area" style="overflow:hidden">
+		        <div style="margin-top:10px"><input placeholder="请输入店名" type="text" id="addrinfo" name="" class="shitiName"></div><br>
+				<span style="display:block;float:left;font-size:16px;">地域:</span>
+				<div class="t1" style="float:left;margin-left:10px;margin-bottom:0">
+		            <select name="province" id="province">
+		            </select>
+		            <select name="city" id="city">
+		            </select>
+	                <select name="county" id="county">
+	                </select>
+		        </div>
+    		</div>
+    		
+			<!-- <div style="overflow:hidden">
+				<span style="display:block;float:left;font-size:16px;">选择商品类别</span>
+				<select style="margin-left:10px" id="product_category">
+					<option value="1">第一</option>
+				</select>
+			</div>
+			<div style="overflow:hidden">
+				<span style="display:block;float:left;font-size:16px;">评论内容</span>
+				<select id="select_content" style="margin-left:10px">
+					<option>第一条第一条第一条第一条</option>
+					<option>第2条第2条第一条第一条</option>
+				</select>
+			</div> -->
+			<textarea id="_content" placeholder="请输入内容" class="review_content"></textarea>
+			
+		</div><!-- 发布内容 End -->
+		
+		<div><!-- 确认发布 Begin -->
+			<a class="head_toreview" href="javascript:doact();"><strong>确定发布</strong></a>
+		</div><!-- 确认发布 End -->
+
+		<!-- <div>
+			
+			<input type="button" value="提交" onclick="ajaxFileUpload()"/>  
+		</div> -->
+		<script type="text/javascript"> 
+			setup();
+			var type=<?php echo $type; ?>;
+			if(type==1){
+				$('#tit').attr("placeholder","请输入地址");
+				$('#area').show();
+			}else{
+				$('#tit').attr("placeholder","请输入网址");
+				$('#area').hide();
+			}
+			$('.review_tab div').click(function(){
+				$('.review_tab div').each(function(){
+					$(this).removeClass("review_tab_off");
+					$(this).removeClass("review_tab_on");
+				});
+				$(this).addClass("review_tab_on");
+				$(this).siblings().each(function(){
+					$(this).addClass("review_tab_off");
+				});
+				if($(this).text()=="网址差评"){
+					$('#my_xia').css("marginLeft","22%");
+					$('#my_xia').css("marginTop","-3px");
+				$('#tit').attr("placeholder","请输入网址");
+					type=0;
+					$('#area').hide();
+				}else{	
+					$('#my_xia').css("marginLeft","72%");
+					$('#my_xia').css("marginTop","-3px");
+				$('#tit').attr("placeholder","请输入地址");
+					type=1;
+					$('#area').show();
+				}
+			});
+			var url;
+			function ajaxFileUpload(url){  
+				// $.post('__URL__/saveAdd',{'id':'yanghaomin'},function(data){});
+				$.ajaxFileUpload({  
+					url:url,            //需要链接到服务器地址  
+					secureuri:false,  
+					fileElementId:'houseMaps',                        //文件选择框的id属性  
+					dataType: 'json',                               //服务器返回的格式，可以是json  
+					success: function (data)            //相当于java中try语句块的用法  
+					{       
+					    alert(data.msg);
+					    window.location.href="__APP__/home/act/reviewInfo?id="+data.rid;  
+					},  
+					error: function (data)            //相当于java中catch语句块的用法  
+					{  
+					    alert(data.msg);  
+					}  
+				});  
+
+			}  
+			$('#select_content').change(function(){
+				$('#_content').text($(this).val());
+			});
+			function doact(){
+				url="__URL__/saveAdd?store_type="+type+"&store_name="+$('#addrinfo').val()+"&address="+$('#tit').val()+"&";
+				if(type==1){
+					url+=("province="+$('#province').val()+"&city="+$('#city').val()+"&district="+$('#county').val()+"&");
+				}
+				url+=("product_category_id="+$('#product_category').val()+"&content="+$('#_content').val()+"&product_name="+$('#product').val());
+				// alert(url);
+				if($('#houseMaps').val()!=''){
+					ajaxFileUpload(url);
+				}else{
+					$.post(url,{},function(data){
+						if(data.status==1){
+							alert(data.msg);
+						    window.location.href="__APP__/home/act/reviewInfo?id="+data.rid;
+						} 
+					},'json'
+					)
+				}
+				
+			}
+		</script>  
+<include file="Public/footer" />

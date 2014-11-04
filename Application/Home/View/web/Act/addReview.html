@@ -1,0 +1,88 @@
+<extend name="Public:base" />
+
+<block name="title"><title>网评如潮-发布差评</title></block>
+<block name="right">
+	<div class="base_right">
+		<div id="fabu_top">
+			<img src="__APP__/Public/static/img/web_logo_small.jpg" class="img_float_right mtop30">
+			<p class="home_index_tab_on" style="width:180px;">发布网址差评</p>
+			<p class="home_index_tab" style="width:180px;">发布实体店差评</p>
+		</div>
+		<div id="fabu_bottom">
+			<form id="postForm" action="__URL__/saveAdd" method="post" enctype='multipart/form-data'> 
+				<input type="hidden" name="store_type" value="0">
+				<div class="fabu_index_left">
+					<ul>
+						<li>
+							购买凭证&nbsp;<span style="color:red">*</span>
+							<input onclick="as();" type="file" name="aaa1" multiple="multiple" accept="image/*" class="houseMaps" >
+							<img src="__APP__/Public/static/img/addImg.gif" class="onhouseMaps">
+						</li>
+						<li>
+							商品图片&nbsp;<span style="color:red">*</span>
+							<input onclick="as();" id="goodsImg" type="file" name="aaa2[]" multiple="multiple" accept="image/*" class="houseMaps" >
+							<img src="__APP__/Public/static/img/addImg.gif" class="onhouseMaps">
+						</li>
+						<li id="befor">
+							<span style="color:red">添加图片</span>
+							<img id="addImg" src="__APP__/Public/static/img/autoadd.jpg" class="onhouseMaps">
+						</li>
+						<div style="clear:both"></div>
+					</ul>
+					<input placeholder="请输入网址" type="text" id="tit" name="address" class="shitiName"><br>
+					<input id="product" placeholder="请输入商品名称" type="text" name="product_name" class="shitiName">
+					<input placeholder="请输入店名" type="text" id="addrinfo" name="store_name" class="shitiName">
+					<div id="isshiti" style="display:none">
+						<span class="shitiName">
+							所在地&nbsp;&nbsp;
+						</span>
+			        	<select id="s_province" name="s_province"></select>&nbsp;-&nbsp;
+			        	<select id="s_city" name="s_city" ></select>&nbsp;-&nbsp;
+			        	<select id="s_county" name="s_county"></select>
+			        
+			        	<script type="text/javascript">_init_area();</script>
+					</div>
+					<textarea id="_content" name="content" placeholder="请输入内容" style="font-size:16px;" class="review_content"></textarea>
+					<a id="add_submit" href="javascript:doact()"><img src="__APP__/Public/static/img/add_fabu.jpg"></a>
+				</div>
+			</form>
+			<div class="fabu_index_right"></div>
+			<div style="clear:both"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function doact(){
+			if($('#tit').val()==''){
+				alert('请输入地址或网址');
+				return;
+			}
+			// alert($('#s_province').val());return;
+			if($('#product').val()==''){
+				alert('请输入产品名称');
+				return;
+			}
+			if($('#isshiti').is(':visible') && ($('#s_province').val()=='省份' || $('#s_city').val()=='地级市' || $('#s_county').val()=='市、县级市')){
+				alert('请选择地区');
+				return;
+			}
+			if($('input[name=aaa1]').val()==''){
+				alert('请选择购买凭证');return;
+			}
+			if($('#goodsImg').val()==''){
+				alert('请选择商品图片');return;
+			}
+
+			if($('#_content').val()==''){
+				alert('请输入内容');
+				return;
+			}
+			if($("input[name=store_type]").val()==1 && $('#addrinfo').val()==''){
+				alert('请输入店名');
+				return;
+			}
+			
+			$('#postForm').submit();
+			
+		}
+	</script>
+</block>

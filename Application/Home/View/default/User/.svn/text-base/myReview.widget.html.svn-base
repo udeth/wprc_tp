@@ -1,0 +1,32 @@
+<div id="inpage">
+<div id="listmode_hot">
+	<?php if(empty($data['list'])){echo"暂无网评信息!";} ?>
+	<!-- <volist name="data.list" id="list"> -->
+		<a href="__APP__/home/act/reviewInfo?id={$list.id}"><div style="border:solid 1px #D4D0D1;padding:0 10px;margin-top:10px;">
+			<p style="height:30px;line-height:30px;text-align:left;margin:10px auto;font-size:18px;">
+				<?php if($list['store_type']==1){echo "地址:".$list['province'].$list['city'].$list['district'].$list['address'];}else{echo "网址:".$list['address'];} ?>
+			</p>
+			<!-- <p style="margin:10px auto;font-size:14px;">
+				<span>产品名称:{$list.product_name}</span>
+				<span style="margin-left:20%">产品类别:{$list.name}</span>
+			</p> -->
+			<div>
+				<volist name="list.image" id="arr">
+					<img src="__APP__/{$arr.image}" style="width:30%">
+				</volist>
+			</div>
+			<p style="margin:10px auto;color:#777777">{$list.content|mb_substr=0,50,"utf-8"}...<!-- <a href="__APP__/home/act/reviewInfo?id={$list.id}" style="color:red">详情>></a> --></p>
+			<p style="margin:10px auto;font-size:14px;">发布时间:{$list.time|date="Y-m-d",###}</p>
+			<div style="color:#888785;height:30px;line-height:30px;font-size:12px;">
+				<img src="__APP__/Public/static/img/pinglun.jpg" style="vertical-align: middle;">&nbsp;评论({$list.comment_count})&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="__APP__/Public/static/img/xingxing.jpg" style="vertical-align: middle;">&nbsp;收藏({$list.collect_count})
+			</div>
+		</div></a>
+	<!-- </volist> -->
+</div>
+</div>
+
+<script type="text/javascript">
+	
+</script>
+

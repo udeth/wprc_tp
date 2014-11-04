@@ -1,0 +1,174 @@
+<include file="Public/header" />
+		<div class="review_tab" style="margin-bottom:15px;"><!-- 发布差评切换 Begin -->
+			<div class="review_tab_on">网址差评</div>
+			<div class="review_tab_off">实店差评</div>
+		</div><!-- 发布差评切换 End -->
+		<!-- <img id="my_xia" src="__APP__/Public/static/img/my_xia.jpg" style="width:20px;height:7px;margin-left:22%;margin-bottom:15px;margin-top:-3px"> -->
+
+		<div class="review_main"><!-- 发布内容 Begin -->
+			<form id="postForm" action="__URL__/saveAdd" method="post" enctype='multipart/form-data'> 
+			<input type="hidden" name="store_type" value="0">
+			<div style="margin-bottom:0" id="imgArr">
+				<p style="width:30%;float:left;margin-bottom:0;text-align:center">
+					<input onclick="as();" style="position:absolute;opacity:0;width:80px;height:80px;" type="file" name="aaa1" multiple="multiple" accept="image/*" class="houseMaps" />
+					<img src="__APP__/Public/static/img/addImg.gif" style="width:80px;height:80px;"><br>
+					购买凭证
+				</p>
+				<!-- <p style="width:30%;float:left;margin-bottom:0;margin-left:1%;text-align:center">
+					<input onclick="as();" style="position:absolute;opacity:0;width:80px;height:80px;" type="file" name="aaa2" multiple="multiple" accept="image/*" class="houseMaps" />
+					<img src="__APP__/Public/static/img/addImg.gif" style="width:80px;height:80px;"><br>
+					发票图片
+				</p> -->
+				<p style="width:30%;float:left;margin-bottom:0;margin-left:1%;text-align:center">
+					<input onclick="as();" style="position:absolute;opacity:0;width:80px;height:80px;" type="file" id="goodsImg" name="aaa2[]" multiple="multiple" accept="image/*" class="houseMaps" />
+					<img src="__APP__/Public/static/img/addImg.gif" style="width:80px;height:80px;"><br>
+					商品图片
+				</p>
+				<p  id="befor" style="width:30%;float:left;margin-bottom:0;margin-left:1%;text-align:center">
+					
+					<img id="addImg" src="__APP__/Public/static/img/addImg.gif" style="width:80px;height:80px;"><br>
+					继续添加
+				</p>
+			</div>
+			<div style="clear:left"></div>
+				<!-- <button id="addImg">增加</button> -->
+			<p class="review_intro">1.支持jpg、png格式</p>
+			<p class="review_intro">2.建议在wifi环境下上传图片</p>
+			<div><input placeholder="" type="text" id="tit" name="address" class="shitiName"></div>
+			<div><input id="product" placeholder="请输入投诉商品名称" type="text" name="product_name" class="shitiName"></div>
+        	<div><input placeholder="请输入投诉店家名称" type="text" id="addrinfo" name="store_name" class="shitiName"></div>
+			
+			<div id="area" style="overflow:hidden">
+		        <div style="margin-top:10px">
+		        </div><br>
+				<span style="display:block;float:left;font-size:16px;">地域:</span>
+		        <div>
+		        	<select id="s_province" name="s_province"></select>&nbsp;&nbsp;
+		        	<select id="s_city" name="s_city" ></select>&nbsp;&nbsp;
+		        	<select id="s_county" name="s_county"></select>
+		        
+		        	<script type="text/javascript">_init_area();</script>
+	        	</div>
+	        	<div id="show"></div>
+    		</div>
+    		
+			<!-- <div style="overflow:hidden">
+				<span style="display:block;float:left;font-size:16px;">选择商品类别</span>
+				<select style="margin-left:10px" id="product_category">
+					<option value="1">第一</option>
+				</select>
+			</div>
+			<div style="overflow:hidden">
+				<span style="display:block;float:left;font-size:16px;">评论内容</span>
+				<select id="select_content" style="margin-left:10px">
+					<option>第一条第一条第一条第一条</option>
+					<option>第2条第2条第一条第一条</option>
+				</select>
+			</div> -->
+			<textarea id="_content" name="content" placeholder="请输入内容" style="font-size:16px;" class="review_content"></textarea>
+			
+		</div><!-- 发布内容 End -->
+		
+		<div><!-- 确认发布 Begin -->
+			<a class="head_toreview" href="javascript:doact();"><strong>确定发布</strong></a>
+		</div><!-- 确认发布 End -->
+</form>
+		<!-- <div>
+			
+			<input type="button" value="提交" onclick="ajaxFileUpload()"/>  
+		</div> -->
+		<script type="text/javascript"> 
+			// setup();
+			var type=<?php echo $type; ?>;
+			if(type==1){
+				$('#tit').attr("placeholder","请输入地址");
+				$('#area').show();
+			}else{
+				$('#tit').attr("placeholder","请输入网址");
+				$('#area').hide();
+			}
+			$('.review_tab div').click(function(){
+				$('.review_tab div').each(function(){
+					$(this).removeClass("review_tab_off");
+					$(this).removeClass("review_tab_on");
+				});
+				$(this).addClass("review_tab_on");
+				$(this).siblings().each(function(){
+					$(this).addClass("review_tab_off");
+				});
+				if($(this).text()=="网址差评"){
+					$('#my_xia').css("marginLeft","22%");
+					$('#my_xia').css("marginTop","-3px");
+				$('#tit').attr("placeholder","请输入网址");
+					$("input[name=store_type]").val("0");
+					$('#area').hide();
+				}else{	
+					$('#my_xia').css("marginLeft","72%");
+					$('#my_xia').css("marginTop","-3px");
+					$('#tit').attr("placeholder","请输入地址");
+					$("input[name=store_type]").val("1");
+					$('#area').show();
+				}
+			});
+			$('#select_content').change(function(){
+				$('#_content').text($(this).val());
+			});
+			function doact(){
+				if($('#tit').val()==''){
+					alert('请输入地址或网址');
+					return;
+				}
+				// alert($('#s_province').val());return;
+				if($('#product').val()==''){
+					alert('请输入产品名称');
+					return;
+				}
+				if($('#area').is(':visible') && ($('#s_province').val()=='省份' || $('#s_city').val()=='地级市' || $('#s_county').val()=='市、县级市')){
+					alert('请选择地区');
+					return;
+				}
+				if($('input[name=aaa1]').val()==''){
+					alert('请选择购买凭证');return;
+				}
+				if($('#goodsImg').val()==''){
+					alert('请选择商品图片');return;
+				}
+				
+				$('#postForm').submit();
+				
+			}
+
+			$(function(){
+			$('#addImg').on('click',function(){
+			// $('#addImg').click(function(){
+				if($(this).parent().prev().children('input').val()==''){
+					alert("请先选择前一张图片");
+					return false;
+				}
+				$('#befor').before("<p style='width:30%;float:left;margin-bottom:0;margin-left:1%;text-align:center'><input style='position:absolute;opacity:0;width:80px;height:80px;' type='file' name='aaa2[]' multiple='multiple' accept='image/*' class='houseMaps' onclick='as();' /><img src='__APP__/Public/static/img/addImg.gif' style='width:80px;height:80px;'><br>商品图片</p>");
+			});
+			});
+
+			// $(".houseMaps").change(function(){
+			function as(){
+			$('.houseMaps').on('change',function(){
+			    var objUrl = getObjectURL(this.files[0]) ;
+			    console.log("objUrl = "+objUrl) ;
+			    if (objUrl) {
+			        $(this).next().attr("src", objUrl) ;
+			    }
+			}) ;}
+			//建立一個可存取到該file的url
+			function getObjectURL(file) {
+			    var url = null ; 
+			    if (window.createObjectURL!=undefined) { // basic
+			        url = window.createObjectURL(file) ;
+			    } else if (window.URL!=undefined) { // mozilla(firefox)
+			        url = window.URL.createObjectURL(file) ;
+			    } else if (window.webkitURL!=undefined) { // webkit or chrome
+			        url = window.webkitURL.createObjectURL(file) ;
+			    }
+			    return url ;
+			}
+		</script>  
+<include file="Public/footer" />

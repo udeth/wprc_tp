@@ -1,0 +1,54 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<meta name="viewport" content="minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="__APP__/Public/static/js/pccs.js"></script>
+	<script type="text/javascript" src="__APP__/Public/static/js/jquery.js"></script>
+	<script type="text/javascript" src="__APP__/Public/static/js/ajaxfileupload.js"></script>
+	<script type="text/javascript" src="__APP__/Public/static/js/js.js"></script>
+	<title>网评潮流-发布差评</title>
+	<link href="__APP__/Public/static/css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<a href="__APP__/home/index/index">
+		<div id="head_banner" style="height:150px;"><!-- 头部banner -->
+			<img src="__APP__/Public/static/img/banner.jpg" style="width:100%;height:100%;">
+		<?php if(!$isLogin){ ?>
+			<a class="head_touser" href="__APP__/home/user/login" style="top:115px;right:75px">登陆</a>
+			<a class="head_touser" href="__APP__/home/user/insert" style="top:115px;right:10px;">注册</a>
+		<?php }else{ ?>
+			<a class="head_touser" href="__APP__/home/user/" style="top:115px;right:10px">个人中心</a>
+			<a id="logout" class="head_touser" href="__APP__/home/user/logOut" style="top:115px;right:100px">注销登录</a>
+		<?php } ?>
+		</div>
+		</a>
+		<script type="text/javascript">
+			$('#logout').click(function(){
+				var logouturl=$(this).attr("href");
+				// alert(logouturl);return false;
+				$.post(logouturl,{},function(data){
+					if(data.status==1){
+						alert("注销登录成功");
+						window.location.href="__APP__/home/";
+						return false;
+					}
+				},'json');
+				return false;
+			});
+		</script>
+
+		<div><!-- 发布差评 -->
+			<a class="head_toreview" href="__APP__/home/act/addreview"><strong>发布差评</strong></a>
+		</div>
+		<div class="head_search"><!-- 搜索差评 Begin -->
+		<form method="post" action="__APP__/home/index/search">
+			<select class="head_search_select" name="store_type">
+				<option value="0">差网址</option>
+				<option value="1">差实店</option>
+			</select>
+			<div class="head_search_change">
+				<input name="kword" placeholder="请输入网址或店名" style="border:0;width:100%;height:30px">
+			</div>
+			<input type="submit" class="head_search_search" value="搜索">
+		</form>
+		</div><!-- 搜索差评 End -->

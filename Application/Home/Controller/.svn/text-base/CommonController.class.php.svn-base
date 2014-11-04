@@ -1,0 +1,73 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+/**
+ *网站前台公共类
+ *初始化、登陆、验证....
+ */
+class CommonController extends Controller {
+
+	public $isLogin;//用户是否登陆
+    
+    /**
+     *控制器初始化配置
+     */
+	public function __construct(){
+
+		parent::__construct();
+		$this->isLogin=$this->isLogin();
+		$this->assign('isLogin',$this->isLogin);
+	}
+
+	/**
+     *获取用户信息
+     *@return false|mixed
+     */
+	public function getUserInfo(){
+
+		$loginInfo=empty($_SESSION['loginInfo'])?$_COOKIE['think_loginInfo']:$_SESSION['loginInfo'];
+		if(empty($loginInfo)){
+			return false;
+		} else {
+			$data = json_decode(base64_decode($loginInfo), true);
+			if(!empty($data)){
+				return $data;
+			}
+		}
+	}
+
+	/**
+     *用户登陆验证
+     *@return boolean
+     */
+	public function isLogin(){
+
+		$userInfo=$this->getUserInfo();
+		if(!empty($userInfo)){
+			$this->assign('isLogin',1);
+			$userName=empty( $userInfo['name'] ) ? $userInfo['account'] : $userInfo['name'];
+			$this->assign('userName',$userName);
+			return true;
+		}else{
+			$this->assign('isLogin',0);
+			return false;
+		}
+	}
+
+	/**
+     *保存用户登陆信息
+     */
+	public function saveUserIfo($userInfo,$isMember=0){
+
+		if(!$userInfo){
+			return false;
+		}
+		$_SESSION['loginInfo']=base64_encode(json_encode($userInfo));
+		//保存用户登陆信息在本地一周 
+		if($isMember){
+			cookie('loginInfo',$_SESSION['loginInfo'],array('expire'=>24*3600*7,'prefix'=>'think_'));
+		}
+	}
+
+
+}

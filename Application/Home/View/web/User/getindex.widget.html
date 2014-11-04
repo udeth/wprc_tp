@@ -1,0 +1,129 @@
+<div>
+<form method="post" action="__APP__/home/user/changeInfo" enctype="multipart/form-data" id="change">
+	<table>
+		<tr>
+			<td class="form_left" style="height:120px;text-align:center;position:relative">
+				<img src="__APP__/<?php if(empty($data['userInfo']['image'])){echo 'Public/static/img/default_big.jpg';}else{echo 'Uploads/Picture/User/'.$data['userInfo']['image'];} ?>" style="height:70px;width:80px;"><br>
+				<input id="touxiang" type="file" onclick="changeImg()" style="opacity:0;width:60px;position:absolute;top:85px;width:80px;left:0px;" name="img">
+				<button style="margin-top:10px;">更换头像</button> 
+			</td>
+			<td class="form_right" style="height:90px;">
+				<p>
+					<input type="text" name="name" value="{$data.userInfo.name}" style="height:30px;line-height:30px;width:160px;">&nbsp;&nbsp;&nbsp;
+					<img src="__APP__/Public/static/img/<?php if($data['userInfo']['sex']){echo 'sex_nan.jpg';}else{echo 'sex_nv.jpg';}?>">
+				</p>
+				<p>关注（{$data.userInfo.follow_count}）&nbsp;&nbsp;&nbsp;&nbsp;被关注（{$data.userInfo.fans_count}）</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="form_left">基本信息</td>
+		</tr>
+		<tr>
+			<td class="form_left">
+				所在地
+			</td>
+			<td class="form_right">
+				<select id="s_province" name="s_province"></select>&nbsp;-&nbsp;
+	        	<select id="s_city" name="s_city" ></select>&nbsp;-&nbsp;
+	        	<select id="s_county" name="s_county"></select>
+	        	<script type="text/javascript">
+	        		_init_area();
+	        		if("{$data.userInfo.province}"){
+	        			$('#s_province').append("<option selected value='{$data.userInfo.province}'>{$data.userInfo.province}</option>");
+	        		}
+	        		if("{$data.userInfo.city}"){
+	        			$('#s_city').append("<option selected value='{$data.userInfo.city}'>{$data.userInfo.city}</option>");
+	        		}
+	        		if("{$data.userInfo.district}"){
+	        			$('#s_county').append("<option selected value='{$data.userInfo.district}'>{$data.userInfo.district}</option>");
+	        		}	
+	        	</script>
+			</td>
+		</tr>
+		<tr>
+			<td class="form_left">
+				生日
+			</td>
+			<td class="form_right">
+				<select id="year" name="year"></select>
+				<select id="month" name="month"></select>
+				<select id="day" name="day"></select>
+				<script type="text/javascript">
+					var yearStr='';
+					var monthStr='';
+					var dayStr='';
+					for(var k=1900;k<2014;k++){
+						yearStr += "<option value='"+k+"'>"+k+"年</option>";
+					}
+					for(var i=1;i<13;i++){
+						monthStr += "<option value='"+i+"'>"+i+"月</option>";
+					}
+					for(var j=1;j<32;j++){
+						dayStr += "<option value='"+j+"'>"+j+"日</option>";
+					}
+					$('#year').append(yearStr);
+					$('#month').append(monthStr);
+					$('#day').append(dayStr);
+					if("{$data.userInfo.birthday}"!="0000-00-00 00:00:00"){
+						$('#year').append("<option selected value='"+{$data.userInfo.birthday|substr=0,4}+"'>"+{$data.userInfo.birthday|substr=0,4}+"年</option");
+						$('#month').append("<option selected value='"+{$data.userInfo.birthday|substr=5,2}+"'>"+{$data.userInfo.birthday|substr=5,2}+"月</option");
+						$('#day').append("<option selected value='"+{$data.userInfo.birthday|substr=8,2}+"'>"+{$data.userInfo.birthday|substr=8,2}+"日</option");
+					}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td class="form_left">
+				QQ号码
+			</td>
+			<td class="form_right">
+				<input type="text" name="QQ" value="<?php if(!empty($data['userInfo']['QQ'])){echo $data['userInfo']['QQ'];}else{ echo '';} ?>" style="height:30px;line-height:30px;width:350px;">
+			</td>
+		</tr>
+		<tr>
+			<td class="form_left">
+				积分
+			</td>
+			<td class="form_right">
+				{$data.userInfo.score}
+			</td>
+		</tr>
+		<tr>
+			<td class="form_left">
+				手机号码
+			</td>
+			<td class="form_right">
+				<input type="text" name="mobile" value="{$data.userInfo.mobile}" style="height:30px;line-height:30px;width:350px;">
+			</td>
+		</tr>
+	</table>
+	<p style="text-align:right;"><span onclick="tijiao();" id="">修改</span></p>
+</form>
+	<script type="text/javascript">
+		function changeImg(){
+			$('#touxiang').on('change',function(){
+			    var objUrl = getObjectURL(this.files[0]) ;
+			    console.log("objUrl = "+objUrl) ;
+			    if (objUrl) {
+			        $(this).prev().prev().attr("src", objUrl) ;
+			    }
+			});
+		}
+		function tijiao(){
+			function check(){
+				if($("input[name='name']").val()==''){
+					alert('请输入昵称');
+					return false;
+				}
+				if($('#s_province').val()=='省份' || $('#s_city').val()=='地级市' || $('#s_county').val()=='市、县级市'){
+					alert('请输入正确的地区');
+					return false;
+				}
+				return true;
+			}
+			if(check()){
+				$('#change').submit();
+			}
+		}
+	</script>
+</div>

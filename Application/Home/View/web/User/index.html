@@ -1,0 +1,38 @@
+<extend name="Public:base" />
+<block name="title"><title>网评如潮-个人中心</title></block>
+
+<block name="right">
+	<div class="base_right">
+		<div id="fabu_top" style="padding:0">
+			<img src="__APP__/Public/static/img/web_logo_small.jpg" class="img_float_right mtop30">
+
+			<p class="home_index_tab_on" name="getindex">个人资料</p>
+			<p class="home_index_tab" name="myReview">我的发布</p>
+			<p class="home_index_tab" name="myCollect">我的收藏</p>
+			<p class="home_index_tab" name="myMsg">评论/回复</p>
+		</div>
+		<div id="fabu_bottom">
+		</div>
+	</div>
+	<script type="text/javascript">
+		var tabObj=new Object();
+		tabObj.name="getindex";
+		$.post("__APP__/home/user/"+tabObj.name,{},function(data){
+					$('#fabu_bottom').html(data.html);
+				},'json')
+		//tab切换
+		$('#fabu_top').children('p').click(function(){
+			$('#fabu_top').children('p').each(function(){
+				$(this).removeClass('home_index_tab_on');
+				$(this).removeClass('home_index_tab');
+				$(this).addClass('home_index_tab');
+			});
+			$(this).removeClass('home_index_tab');
+			$(this).addClass('home_index_tab_on');
+			tabObj.name=$(this).attr("name");
+			$.post("__APP__/home/user/"+tabObj.name,{},function(data){
+				$('#fabu_bottom').html(data.html);
+			},'json')
+		});
+	</script>
+</block>

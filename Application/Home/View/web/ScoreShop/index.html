@@ -1,0 +1,36 @@
+<extend name="Public:base" />
+<block name="title"><title>网评如潮-积分兑换</title></block>
+
+<block name="right">
+	<div class="base_right mtop30">
+		<div id="masseage_top">
+			积分兑换中心
+			<br><br>
+			<p>当前积分：{$userInfo.0.score}&nbsp;&nbsp;&nbsp;
+				<a href="__APP__/home/ScoreShop/jifen" style="color:#0B2FC3;text-decoration:underline;">什么是积分?</a>
+			</p>
+		</div>
+		<!-- <volist name="list" id="list"> -->
+		<div style="margin-bottom:15px;">
+			<p class="zhuanqu_title">&nbsp;&nbsp;{$list.zhuanqu_name}</p>
+			<div style="width:96%;margin:0 auto">
+				<ul>
+					<!-- <volist name="list.arr" id="arr"> -->
+					<a href="__APP__/home/ScoreShop/goods_info?id={$arr.gid}"><li class="goods_list">
+						<img src="__APP__/Uploads/{$arr.thumb_img}" class="goods_img">
+						<p style="display:none">{$arr.gid}</p>
+						<p class="duihuan" style="margin-bottom:10px;background:white;color:red">{$arr.shop_name}</p>
+						<p style="display:none">{$arr.price}</p>
+						<p class="duihuan">兑&nbsp;&nbsp;&nbsp;&nbsp;换</p>
+					</li></a>
+					<!-- </volist> -->
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+		<!-- </volist> -->
+	</div>
+</block>
+<script type="text/javascript">
+	
+</script>

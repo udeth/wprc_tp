@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/www.wprc.com/!svn/ver/66/Application/Lib/PHPMailer/docs
+END
+makedocs2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/www.wprc.com/!svn/ver/66/Application/Lib/PHPMailer/docs/makedocs2.sh
+END
+pop3_article.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/www.wprc.com/!svn/ver/66/Application/Lib/PHPMailer/docs/pop3_article.txt
+END
+use_gmail.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/www.wprc.com/!svn/ver/66/Application/Lib/PHPMailer/docs/use_gmail.txt
+END
+Callback_function_notes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/www.wprc.com/!svn/ver/66/Application/Lib/PHPMailer/docs/Callback_function_notes.txt
+END
+Note_for_SMTP_debugging.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/www.wprc.com/!svn/ver/66/Application/Lib/PHPMailer/docs/Note_for_SMTP_debugging.txt
+END
+extending.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/www.wprc.com/!svn/ver/66/Application/Lib/PHPMailer/docs/extending.html
+END
+DomainKeys_notes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/www.wprc.com/!svn/ver/66/Application/Lib/PHPMailer/docs/DomainKeys_notes.txt
+END
+faq.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/www.wprc.com/!svn/ver/66/Application/Lib/PHPMailer/docs/faq.html
+END

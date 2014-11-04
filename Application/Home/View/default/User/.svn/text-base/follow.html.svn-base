@@ -1,0 +1,33 @@
+<include file="Public:header"/>
+<div style="width:96%;margin:0 auto">
+	<div style="background:#DFDFDF;height:30px;line-height:30px;text-align:left;margin:10px auto;">
+		<?php if($type==1){ ?>关注列表<?php }else{ ?>被关注列表<?php } ?>
+	</div>
+	<div>
+	<!-- <volist name="followList" id="list"> -->
+		<div style="position:relative">
+		<img src="" class="touxiang" style="position:absolute">
+		<span style="position:absolute;left:60px">昵称：{$list.name}</span>
+		<span style="position:absolute;left:180px">性别：<?php if($list['sex']==0){echo "女";}else{echo "男";} ?></span>
+		<span style="position:absolute;left:60px;top:30px">关注：{$list.follow_count}</span><span style="position:absolute;left:160px;top:30px;">被关注：{$list.fans_count}</span>
+		<div style="display:none" class="id">{$list.uid}</div>
+		<button class="add_follow" uid="{$list.wangping.uid}" style="position:absolute;right:0px;top:15px"><?php if($type==1){ ?>取消关注<?php }else{ ?>+关注<?php } ?></button>
+		<div style="clear:both"></div>
+		</div>
+	<!-- </volist> -->
+	</div>
+</div>
+<script type="text/javascript">
+	$('.add_follow').click(function(){
+		var act="<?php if($type==0){echo 'add';}else{echo 'del';} ?>";
+		var id=$(this).prev().text();
+ 		$.post("__APP__/home/act/follow",{id:id,act:act},function(data){
+ 			alert(data.msg);
+ 			if(data.status==1){
+ 				window.location.href=window.location.href;
+ 			}
+ 		},'json');
+	});
+</script>
+
+<include file="Public:footer"/>

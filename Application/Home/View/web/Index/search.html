@@ -1,0 +1,124 @@
+<extend name="Public:base" />
+
+<block name="title"><title>搜索网评</title></block>
+
+
+<block name="right">
+	<div class="base_right mtop30" style="border:solid 1px #DBDBDB">
+		<div class="fabu_index_left" style="padding:10px;">
+			<p class="mbottom ft18">搜索</p>
+			<input placeholder="请输入产品名/网址/实体店名" type="text" id="content" class="search_input" value="{$kword}">
+			<img id="search" src="__APP__/Public/static/img/search.jpg" style="vertical-align: middle;height:40px;">
+			<p class="mbottom"></p>
+			<input type="checkbox" style="" id="wangzhi" value="wangzhi" <?php if($wangzhi){ echo 'checked';} ?>>&nbsp;&nbsp;搜网址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="checkbox" id="shiti" value="shiti" <?php if($shiti){ echo 'checked';} ?>>&nbsp;&nbsp;搜实体店
+			<p class="mbottom"></p>
+			<p class="ft18">
+				所在地：
+				<select id="s_province" name="s_province"></select>&nbsp;-&nbsp;
+		        <select id="s_city" name="s_city" ></select>&nbsp;-&nbsp;
+		        <select id="s_county" name="s_county"></select>
+		        
+		        <script type="text/javascript">_init_area();</script>
+			</p>
+			<p class="mbottom"></p>
+			<p class="mbottom ft18">搜索结果>></p>
+		</div>
+		<div class="fabu_index_right">
+			<img src="__APP__/Public/static/img/web_logo_big.jpg" style="width:225px" class="mtop15">
+		</div>
+		<div style="clear:both"></div>
+		<div id="home_index_bottom" style="margin:0 10px 10px 10px">
+			<volist name="list" id="list">
+				<div class="home_index_list">
+					<div style="padding:10px;">
+						<div class="relative">
+							<a href="__APP__/home/user/userIntro?uid={$list.uid}">
+								<if condition="$list.touxiang eq ''">
+									<img src="__APP__/Public/static/img/default_big.jpg" class="homo_list_touxiang">
+								<else />
+									<img src="__APP__/Uploads/Picture/User/{$list.touxiang}"  class="homo_list_touxiang">
+								</if>
+							</a>
+							<div class="absolute home_list_name">
+								<a href="__APP__/home/user/userIntro?uid={$list.uid}">{$list.uname}</a><br>
+								
+							</div>
+						</div>
+						<div style="margin-left:65px;">
+							<div class="mbottom tow_em font18">
+								{$list.content|mb_substr=0,120,'utf-8'}
+							</div>
+							<p class="mbottom">
+								<volist name="list.image" id="arr">
+									<img src="__APP__/{$arr.thumb_img}">&nbsp;&nbsp;&nbsp;
+								</volist>
+							</p>
+							<p class="mbottom goods_color">
+								投诉商品名称：{$list.product_name}
+							</p>
+							<p class="mbottom goods_color">
+								投诉店家名称：{$list.store_name}
+							</p>
+							<p class="mbottom hone_index_address">
+								<if condition="$list.store_type eq 1">
+									<img src="__APP__/Public/static/img/address.jpg" class="img_middle" style="height:25px;">
+									{$list.province}{$list.city}{$list.district}{$list.address}
+								<else />
+									{$list.address}
+								</if>
+							</p>
+							<span class="gry_small">{$list.time|date="Y-m-d h:i:s",###}</span>
+						</div>
+					</div>
+					<a href="__APP__/home/act/reviewInfo?id={$list.id}">
+						<div class="index_list_bottom">
+							<div class="index_list_bottom_div" style="border-right:solid 1px #D5D5D5">
+								<img src="__APP__/Public/static/img/pinglun.jpg" class="img_middle">
+								（{$list.comment_count}）
+							</div>
+							<div class="index_list_bottom_div">
+								<img src="__APP__/Public/static/img/xingxing.jpg" class="img_middle">
+								（{$list.collect_count}）
+							</div>
+						</div>
+					</a>
+				</div>
+			</volist>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		if("{$province}"){
+			$('#s_province').append("<option value='{$province}' selected>{$province}</option>")
+		}
+		if("{$city}"){
+			$('#s_city').append("<option value='{$city}' selected>{$city}</option>")
+		}
+		if("{$county}"){
+			$('#s_county').append("<option value='{$county}' selected>{$county}</option>")
+		}
+		var url="__APP__/home/index/search?"
+		//执行搜索操作
+		$('#search').click(function(){
+			if($('#shiti').prop("checked")){
+				url+="shiti=1&";
+			}
+			if($('#wangzhi').prop("checked")){
+				url+="wangzhi=1&";
+			}
+			if($('#s_province').val()!="省份"){
+				url+="province="+$('#s_province').val()+"&";
+			}
+			if($('#s_city').val()!="地级市"){
+				url+="city="+$('#s_city').val()+"&";
+			}
+			if($('#s_county').val()!="市、县级市"){
+				url+="county="+$('#s_county').val()+"&";
+			}
+			url+="kword="+$('#content').val()+'&';
+			// alert(url);
+			window.location.href=url;
+		});
+	</script>
+</block>

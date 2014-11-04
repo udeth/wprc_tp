@@ -1,0 +1,128 @@
+<extend name="Public:base" />
+
+<block name="title">
+<title>网评如潮-积分兑换</title>
+<style type="text/css">
+		.intro{
+			margin-bottom:10px;
+		}
+		.box{
+			width:94%;
+			margin:10px auto
+		}
+		.user{
+			margin-bottom: 5px;
+			font-size: 12px;
+		}
+		.input{
+			height:35px;
+			width:100%;
+			margin-bottom: 10px;
+		}
+		.duihuan{
+			background:#FF3709;
+			width:100%;
+			height:50px;
+			line-height: 50px;
+			text-align: center;
+			color: white;
+		}
+		#mode{
+			background-color:rgba(0, 0, 0,0.6); 
+			width: 100%;
+			height: 100%;
+			position:fixed;
+			z-index: 9;
+			top:0;
+			left:0;
+		}
+	</style>
+</block>
+
+<block name="right">
+	<div class="base_right mtop30">
+		<div id="masseage_top">
+			积分兑换
+		</div>
+		<div class="box">
+			<img src="__APP__/Uploads/{$goods_info.image}" style="width:60%;display:block;margin:0 auto">
+		</div>
+		<div class="box">
+			<div>
+				<p class="intro">名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：{$goods_info.shop_name}</p>
+				<p class="intro">市场价格：￥{$goods_info.market_price}.00</p>
+				<p class="intro">需要积分：{$goods_info.price}</p>
+				<div class="intro">
+					详&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;情：{$goods_info.introduce}
+				</div>
+			</div>
+		</div>
+
+		<div class="box">
+			<p class="user">本人手机号码</p>
+			<input class="input" type="text" id="mobile" name="mobile" value="" placeholder="请输入本人手机号码，以便客服确认">
+			<p class="user">联系人姓名</p>
+			<input class="input" type="text" id="name" name="name" value="" placeholder="请输入收货人的姓名">
+			<p class="user">收货地址</p>
+			<input class="input" type="text" id="address" name="address" value="" placeholder="虚拟商品请填写其他收货信息">
+		</div>
+
+		<div class="box">
+			<p class="duihuan" style="width:30%">兑换</p>
+		</div>
+		
+
+		<div id="mode" style="display:none;text-align:center;">
+			<div id="modebody">
+				<p style="text-align:center;padding:20px">兑换<span id="goods_name">{$goods_info.shop_name}</span>，您将失去<span id="goods_price">{$goods_info.price}</span>积分，确定兑换码？</p>
+				<p style="">
+					<button id="yes">确定</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="no">取消</button>
+				</p>
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+	var score={$goods_info.price};   //定义消耗的积分
+	var id={$goods_info.id};      //定义商品ID
+	function isDigit(s)
+	{
+		var patrn=/^[0-9]{1,20}$/;
+		if (!patrn.exec(s)) return false
+		return true
+	}
+	$('.duihuan').click(function(){
+		if($('#mobile').val()==''){
+			alert('请填写您的手机号码');
+			return false;
+		}
+		if(!isDigit($('#mobile').val())){
+			alert('请填写正确的手机号码');
+			return false;
+		}
+		if($('#name').val()==''){
+			alert('请填写您的真实姓名');
+			return false;
+		}
+		if($('#address').val()==''){
+			alert('请填写您的地址或别的收货信息');
+			return false;
+		}
+		$('#mode').show(); 
+		var height=(document.body.clientHeight-150)/2;
+		$('#modebody').css({'width':'250px','height':'150px','background':'white','margin':height+'px auto'});
+	});
+	$('#yes').click(function(){
+		$.post('__APP__/home/ScoreShop/getGoods',{id:id,score:score,name:$('#name').val(),mobile:$('#mobile').val(),address:$('#address').val()},function(data){
+			$('#mode').hide();
+			alert(data.msg);
+			if(data.status==1){
+				window.location.href="__APP__/home/ScoreShop"
+			}
+		},'json');
+	});
+	$('#no').click(function(){
+		$('#mode').hide();
+	});
+</script>
+</block>

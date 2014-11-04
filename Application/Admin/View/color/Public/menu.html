@@ -1,0 +1,37 @@
+<block name="side">	
+<nav class="navbar-default navbar-static-side" role="navigation">
+	<div class="sidebar-collapse">
+		<ul class="nav" id="side-menu">
+		<!-- 子导航 -->
+		<block name="sidebar">
+			<li id="subnav" class="subnav">
+			<notempty name="_extra_menu">
+				{// 动态扩展菜单 //}
+				{:extra_menu($_extra_menu,$__MENU__)}
+			</notempty>
+			<volist name="__MENU__.child" id="sub_menu">					
+				<!-- 子导航 -->
+				<notempty name="sub_menu">
+					<notempty name="key">
+					<a href="#"><h3>
+						<i class="fa fa-sitemap fa-fw"></i>{$key}<span class="fa arrow"></span>	
+ 					</h3></a>
+					</notempty>
+					<ul class="nav nav-second-level">
+						<volist name="sub_menu" id="menu">
+							<li>											
+								<a href="{$menu.url|U}"><i class="fa fa-table fa-fw"></i>&nbsp;&nbsp;{$menu.title}</a>
+							</li>
+						</volist>
+					</ul>
+				</notempty>
+				<!-- /子导航 -->					
+			</volist>
+			</li> 
+		</block>
+		<!-- /子导航 -->
+		</ul> 
+	</div>
+</nav>
+<!-- /.navbar-static-side -->
+</block>

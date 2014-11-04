@@ -1,0 +1,82 @@
+<!-- 分类授权编辑页面 -->
+<extend name="Public/base" />
+
+<block name="body">
+<div class="tab-wrap">
+    <ul class="nav nav-tabs ">
+        <li><a href="{:U('AuthManager/access',array('group_name'=>I('group_name') ,'group_id'=> I('group_id')))}">访问授权</a></li>
+        <li class="active"><a href="javascript:;">分类授权</a></li>
+		<li><a href="{:U('AuthManager/user',array('group_name'=>I('group_name') ,'group_id'=> I('group_id')))}">成员授权</a></li>
+	    <li class="fr">
+		    <select name="group" class="form-control" >
+			    <volist name="auth_group" id="vo">
+				    <option value="{:U('AuthManager/category',array('group_id'=>$vo['id'],'group_name'=>$vo['title']))}" <eq name="vo['id']" value="$this_group['id']">selected</eq> >{$vo.title}</option>
+			    </volist>
+		    </select>
+	    </li>
+    </ul>
+    <!-- 表格列表 -->
+    <div class="tb-unit posr">
+        <form class="save-category" action="{:U('AuthManager/addToCategory')}" method="post" enctype="application/x-www-form-urlencoded">
+            <input type="hidden" name="group_id" value="{:I('group_id')}">
+            
+            <div class="panel-body">
+                <div class="table-responsive">	            
+                    <table class="table table-striped table-bordered table-hover" id="dataTables-authUser"><!-- 必须设定表格的id == -->
+                        <thead>
+                            <tr>
+                            <th class="fold">折叠</th>
+                            <th class="order">选择</th>
+                            <th class="name">栏目名称</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {:R('AuthManager/tree', array($group_list))}
+                        
+                        </tbody>
+                    </table>
+                    <div class="tb-unit-bar">
+                        <button class="btn submit-btn ajax-post" type="submit" target-form="save-category">确 定</button>
+                        <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+                    </div>           
+                                        
+                </div><!-- /table -->
+            </div><!-- /panel -->         
+
+        </form>             
+    </div>
+</div>
+<!-- /表格列表 -->
+</block>
+<block name="script">
+<script type="text/javascript">
+    +function($){
+        /* 分类展开收起 */
+        $(".category dd").prev().find(".fold i").addClass("icon-unfold")
+            .click(function(){
+                var self = $(this);
+                if(self.hasClass("icon-unfold")){
+                    self.closest("dt").next().slideUp("fast", function(){
+                        self.removeClass("icon-unfold").addClass("icon-fold");
+                    });
+                } else {
+                    self.closest("dt").next().slideDown("fast", function(){
+                        self.removeClass("icon-fold").addClass("icon-unfold");
+                    });
+                }
+            });
+
+        var auth_groups = [{$authed_group}];
+        $('.cate_id').each(function(){
+            if( $.inArray( parseInt(this.value,10),auth_groups )>-1 ){
+                $(this).prop('checked',true);
+            }
+        });
+	    $('select[name=group]').change(function(){
+		    location.href = this.value;
+	    });
+    }(jQuery);
+    //导航高亮
+    $('.side-sub-menu').find('a[href="{:U('AuthManager/index')}"]').closest('li').addClass('active');
+</script>
+</block>

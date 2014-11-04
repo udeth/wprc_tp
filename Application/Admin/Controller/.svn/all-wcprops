@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/www.wprc.com/!svn/ver/21/Application/Admin/Controller
+END
+ReviewController.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/www.wprc.com/!svn/ver/6/Application/Admin/Controller/ReviewController.class.php
+END
+MenuController.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/www.wprc.com/!svn/ver/1/Application/Admin/Controller/MenuController.class.php
+END
+ConfigController.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/www.wprc.com/!svn/ver/1/Application/Admin/Controller/ConfigController.class.php
+END
+GuestController.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/www.wprc.com/!svn/ver/12/Application/Admin/Controller/GuestController.class.php
+END
+IndexController.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/www.wprc.com/!svn/ver/5/Application/Admin/Controller/IndexController.class.php
+END
+AdminController.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/www.wprc.com/!svn/ver/1/Application/Admin/Controller/AdminController.class.php
+END
+ChannelController.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/www.wprc.com/!svn/ver/1/Application/Admin/Controller/ChannelController.class.php
+END
+ReplyController.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/www.wprc.com/!svn/ver/6/Application/Admin/Controller/ReplyController.class.php
+END
+AuthManagerController.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/www.wprc.com/!svn/ver/1/Application/Admin/Controller/AuthManagerController.class.php
+END
+ActionController.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/www.wprc.com/!svn/ver/1/Application/Admin/Controller/ActionController.class.php
+END
+ProductCategoryController.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/www.wprc.com/!svn/ver/21/Application/Admin/Controller/ProductCategoryController.class.php
+END
+PublicController.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/www.wprc.com/!svn/ver/1/Application/Admin/Controller/PublicController.class.php
+END
+UserController.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/www.wprc.com/!svn/ver/1/Application/Admin/Controller/UserController.class.php
+END

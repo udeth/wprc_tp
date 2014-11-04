@@ -1,0 +1,1602 @@
+[ 2014-06-19T01:16:48+08:00 ] 66.249.69.40 /home/act/reviewInfo?id=204
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=204 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=204 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=204 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=204 and think_reply.pid in (55,56,62) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=204 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=21 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=21 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.015626s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T01:23:42+08:00 ] 66.249.69.72 /home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=204 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=224 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=223 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015626s ]
+
+[ 2014-06-19T01:26:36+08:00 ] 66.249.69.40 /home/user/userIntro?uid=51
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( uid=51 and flollow_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( uid=51 and flollow_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=51 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: select * from think_review where uid=51 and checked=1 order by time desc limit 0,5 [ RunTime:0.000000s ]
+SQL: select thumb_img,rid from think_review_img where rid in (select * from (select id from think_review where uid=51 and checked=1 order by time desc limit 0,5) as t) [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T01:26:36+08:00 ] 66.249.69.56 /home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\UserController.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: name E:\www.wprc365.com\Runtime\Cache\Home\b171d71961885d3bf0f7a9b2e0867b01.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T01:30:02+08:00 ] 66.249.69.72 /home/act/reviewInfo?id=224
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=224 and pid=0 ) LIMIT 1   [ RunTime:0.015626s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=224 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=224 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=224 and think_reply.pid in (73) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=224 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=49 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=49 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=49 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T01:30:03+08:00 ] 66.249.69.40 /home/user/userIntro?uid=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( uid=53 and flollow_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( uid=53 and flollow_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=53 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: select * from think_review where uid=53 and checked=1 order by time desc limit 0,5 [ RunTime:0.000000s ]
+SQL: select thumb_img,rid from think_review_img where rid in (select * from (select id from think_review where uid=53 and checked=1 order by time desc limit 0,5) as t) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www.wprc365.com\Runtime\Cache\Home\088f424a95cb341437cd87d8f1d4296b.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2014-06-19T01:30:04+08:00 ] 66.249.69.56 /home/act/reviewInfo?id=218
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=218 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=218 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=218 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.015626s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=218 and think_reply.pid in (60,63,67,71) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=218 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=50 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=50 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=50 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T01:35:12+08:00 ] 66.249.69.40 /home/user/userIntro?uid=54
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `think_follow` WHERE ( uid=54 and flollow_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( uid=54 and flollow_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=54 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: select * from think_review where uid=54 and checked=1 order by time desc limit 0,5 [ RunTime:0.000000s ]
+SQL: select thumb_img,rid from think_review_img where rid in (select * from (select id from think_review where uid=54 and checked=1 order by time desc limit 0,5) as t) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T02:38:06+08:00 ] 66.249.69.56 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.015625s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=204 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=224 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=223 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T03:23:06+08:00 ] 66.249.69.44 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.015625s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=204 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=224 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=223 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T03:37:23+08:00 ] 66.249.69.72 /home/act/reviewInfo?id=215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=215 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=215 and think_review.checked=1 limit 1 [ RunTime:0.015625s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=215 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=215 and think_reply.pid in (57,58,59,61,70) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: select name as `rename` from think_user where id=48 [ RunTime:0.000000s ]
+SQL: select name as `rename` from think_user where id=51 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=215 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=49 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=49 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=49 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T04:33:21+08:00 ] 176.123.9.13 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T05:22:53+08:00 ] 66.249.69.44 /home/act/reviewInfo?id=215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.015626s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=215 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=215 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=215 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=215 and think_reply.pid in (57,58,59,61,70) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: select name as `rename` from think_user where id=48 [ RunTime:0.000000s ]
+SQL: select name as `rename` from think_user where id=51 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=215 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=49 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=49 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=49 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.015625s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T07:38:38+08:00 ] 66.249.69.72 /home/act/reviewInfo?id=185
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=185 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=185 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\www.wprc365.com\Application\Home\Model\ReviewModel.class.php 第 51 行.
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=185 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=185 and think_reply.pid in (34) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=185 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: image E:\www.wprc365.com\Application\Home\Model\ReviewModel.class.php 第 75 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: uid E:\www.wprc365.com\Application\Home\Controller\ActController.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid= )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid= ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: uid E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 72 行.
+NOTIC: [8] Undefined index: name E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 72 行.
+NOTIC: [8] Undefined index: time E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 73 行.
+NOTIC: [8] Undefined index: uid E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 74 行.
+NOTIC: [8] Undefined index: content E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 79 行.
+NOTIC: [8] Undefined index: time E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 81 行.
+NOTIC: [8] Undefined index: comment_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 81 行.
+NOTIC: [8] Undefined index: store_type E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 86 行.
+NOTIC: [8] Undefined index: address E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 88 行.
+NOTIC: [8] Undefined index: comment_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 90 行.
+NOTIC: [8] Undefined index: collect_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 93 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: name E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 410 行.
+NOTIC: [8] Undefined index: follow_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 411 行.
+NOTIC: [8] Undefined index: fans_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 412 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T07:38:41+08:00 ] 66.249.69.72 /home/act/reviewInfo?id=189&P=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=189 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=189 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\www.wprc365.com\Application\Home\Model\ReviewModel.class.php 第 51 行.
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=189 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=189 and think_reply.pid in (36,37,40,43) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=189 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: image E:\www.wprc365.com\Application\Home\Model\ReviewModel.class.php 第 75 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: uid E:\www.wprc365.com\Application\Home\Controller\ActController.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid= )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid= ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: uid E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 72 行.
+NOTIC: [8] Undefined index: name E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 72 行.
+NOTIC: [8] Undefined index: time E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 73 行.
+NOTIC: [8] Undefined index: uid E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 74 行.
+NOTIC: [8] Undefined index: content E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 79 行.
+NOTIC: [8] Undefined index: time E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 81 行.
+NOTIC: [8] Undefined index: comment_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 81 行.
+NOTIC: [8] Undefined index: store_type E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 86 行.
+NOTIC: [8] Undefined index: address E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 88 行.
+NOTIC: [8] Undefined index: comment_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 90 行.
+NOTIC: [8] Undefined index: collect_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 93 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: name E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 410 行.
+NOTIC: [8] Undefined index: follow_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 411 行.
+NOTIC: [8] Undefined index: fans_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 412 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2014-06-19T07:56:50+08:00 ] 66.249.69.56 /home/act/reviewInfo?id=204
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=204 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=204 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=204 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=204 and think_reply.pid in (55,56,62) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=204 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=21 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=21 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T08:33:11+08:00 ] 66.249.69.44 /home/act/reviewInfo?id=216
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=216 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=216 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=216 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=216 and think_reply.pid in (64,68,74) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: select name as `rename` from think_user where id=51 [ RunTime:0.015626s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=216 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=48 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=48 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=48 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2014-06-19T11:04:47+08:00 ] 66.249.69.60 /home/user/userIntro?uid=50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( uid=50 and flollow_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( uid=50 and flollow_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.015626s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=50 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: select * from think_review where uid=50 and checked=1 order by time desc limit 0,5 [ RunTime:0.000000s ]
+SQL: select thumb_img,rid from think_review_img where rid in (select * from (select id from think_review where uid=50 and checked=1 order by time desc limit 0,5) as t) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www.wprc365.com\Runtime\Cache\Home\088f424a95cb341437cd87d8f1d4296b.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T11:04:48+08:00 ] 66.249.69.44 /home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\UserController.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: name E:\www.wprc365.com\Runtime\Cache\Home\b171d71961885d3bf0f7a9b2e0867b01.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T12:16:13+08:00 ] 66.249.69.56 /home/act/reviewInfo?id=225
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=225 and pid=0 ) LIMIT 1   [ RunTime:0.015625s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=225 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=225 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=225 and think_reply.pid in (72) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=225 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=53 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=53 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=53 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T12:16:34+08:00 ] 66.249.69.72 /home/act/reviewInfo?id=223
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=223 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=223 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=223 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=223 and think_reply.pid in () order by think_reply.time asc [ RunTime:0.031250s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by think_reply.time asc' at line 1
+ [ SQL语句 ] : select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=223 and think_reply.pid in () order by think_reply.time asc
+NOTIC: [2] Invalid argument supplied for foreach() E:\www.wprc365.com\Application\Home\Model\ReviewModel.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=223 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=11 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=11 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=11 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2014-06-19T12:16:58+08:00 ] 66.249.69.72 /home/act/reviewInfo?id=218&P=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=218 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=218 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=218 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=218 and think_reply.pid in (60,63,67,71) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=218 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=50 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=50 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=50 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T12:17:20+08:00 ] 66.249.69.40 /home/act/reviewInfo?id=224&P=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=224 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=224 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=224 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=224 and think_reply.pid in (73) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=224 )  [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=49 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=49 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=49 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T12:20:34+08:00 ] 66.249.69.56 /home/user/userIntro?uid=48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( uid=48 and flollow_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( uid=48 and flollow_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=48 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: select * from think_review where uid=48 and checked=1 order by time desc limit 0,5 [ RunTime:0.000000s ]
+SQL: select thumb_img,rid from think_review_img where rid in (select * from (select id from think_review where uid=48 and checked=1 order by time desc limit 0,5) as t) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www.wprc365.com\Runtime\Cache\Home\088f424a95cb341437cd87d8f1d4296b.php 第 82 行.
+NOTIC: [8] Undefined index: name E:\www.wprc365.com\Runtime\Cache\Home\088f424a95cb341437cd87d8f1d4296b.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T12:21:59+08:00 ] 66.249.69.56 /home/act/reviewInfo?id=225&P=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=225 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=225 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=225 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=225 and think_reply.pid in (72) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=225 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=53 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=53 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=53 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T13:27:47+08:00 ] 66.249.69.72 /home/act/reviewInfo?id=214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=214 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=214 and think_review.checked=1 limit 1 [ RunTime:0.015625s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=214 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=214 and think_reply.pid in () order by think_reply.time asc [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by think_reply.time asc' at line 1
+ [ SQL语句 ] : select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=214 and think_reply.pid in () order by think_reply.time asc
+NOTIC: [2] Invalid argument supplied for foreach() E:\www.wprc365.com\Application\Home\Model\ReviewModel.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=214 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=48 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=48 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=48 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T13:36:23+08:00 ] 66.249.69.60 /home/act/reviewInfo?id=225
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=225 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=225 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=225 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=225 and think_reply.pid in (72) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=225 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=53 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=53 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=53 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T14:22:16+08:00 ] 66.249.69.40 /home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\UserController.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: name E:\www.wprc365.com\Runtime\Cache\Home\b171d71961885d3bf0f7a9b2e0867b01.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015626s ]
+
+[ 2014-06-19T14:39:05+08:00 ] 216.172.56.37 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=204 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=224 [ RunTime:0.015626s ]
+SQL: select `thumb_img` from think_review_img where rid=223 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015626s ]
+
+[ 2014-06-19T15:43:19+08:00 ] 176.123.9.13 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T16:07:56+08:00 ] 66.249.69.76 /home/act/reviewInfo?id=218
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=218 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=218 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=218 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=218 and think_reply.pid in (60,63,67,71) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.015626s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=218 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=50 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=50 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=50 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015626s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015626s ]
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2014-06-19T17:23:44+08:00 ] 66.249.69.44 /home/user/userIntro?uid=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( uid=53 and flollow_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( uid=53 and flollow_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=53 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: select * from think_review where uid=53 and checked=1 order by time desc limit 0,5 [ RunTime:0.000000s ]
+SQL: select thumb_img,rid from think_review_img where rid in (select * from (select id from think_review where uid=53 and checked=1 order by time desc limit 0,5) as t) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www.wprc365.com\Runtime\Cache\Home\088f424a95cb341437cd87d8f1d4296b.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T17:38:09+08:00 ] 221.7.51.158 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=204 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=224 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=223 [ RunTime:0.015625s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T17:38:13+08:00 ] 221.7.51.158 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.015625s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=204 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=224 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=223 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] file_put_contents(./Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php): failed to open stream: Invalid argument E:\www.wprc365.com\ThinkPHP\Library\Think\Storage\Driver\File.class.php 第 46 行.
+ERR: _STORAGE_WRITE_ERROR_:./Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php
+
+[ 2014-06-19T17:38:13+08:00 ] 221.7.51.158 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.015625s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=204 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=224 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=223 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T20:19:21+08:00 ] 112.64.235.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=204 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=224 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=223 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T21:21:34+08:00 ] 66.249.69.56 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  comment_count desc,time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.015625s ]
+SQL: SELECT r.*,p.name,u.name as uname,i.image as touxiang FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_user_info as i on i.uid=r.uid  WHERE ( r.checked=1 ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=215 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=204 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=225 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=224 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=223 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=218 [ RunTime:0.000000s ]
+SQL: select `thumb_img` from think_review_img where rid=216 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T21:56:50+08:00 ] 66.249.69.72 /home/act/reviewInfo?id=180
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=180 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=180 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\www.wprc365.com\Application\Home\Model\ReviewModel.class.php 第 51 行.
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=180 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=180 and think_reply.pid in (44) order by think_reply.time asc [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=180 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: image E:\www.wprc365.com\Application\Home\Model\ReviewModel.class.php 第 75 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: uid E:\www.wprc365.com\Application\Home\Controller\ActController.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid= )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid= ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: uid E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 72 行.
+NOTIC: [8] Undefined index: name E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 72 行.
+NOTIC: [8] Undefined index: time E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 73 行.
+NOTIC: [8] Undefined index: uid E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 74 行.
+NOTIC: [8] Undefined index: content E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 79 行.
+NOTIC: [8] Undefined index: time E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 81 行.
+NOTIC: [8] Undefined index: comment_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 81 行.
+NOTIC: [8] Undefined index: store_type E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 86 行.
+NOTIC: [8] Undefined index: address E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 88 行.
+NOTIC: [8] Undefined index: comment_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 90 行.
+NOTIC: [8] Undefined index: collect_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 93 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: name E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 410 行.
+NOTIC: [8] Undefined index: follow_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 411 行.
+NOTIC: [8] Undefined index: fans_count E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 412 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2014-06-19T22:26:53+08:00 ] 66.249.69.56 /home/user/userIntro?uid=50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( uid=50 and flollow_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( uid=50 and flollow_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=50 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: select * from think_review where uid=50 and checked=1 order by time desc limit 0,5 [ RunTime:0.000000s ]
+SQL: select thumb_img,rid from think_review_img where rid in (select * from (select id from think_review where uid=50 and checked=1 order by time desc limit 0,5) as t) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www.wprc365.com\Runtime\Cache\Home\088f424a95cb341437cd87d8f1d4296b.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2014-06-19T23:06:05+08:00 ] 66.249.69.40 /home/index/searchIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\990204805bc8539246080dc6a5c5a6ea.php 第 136 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\990204805bc8539246080dc6a5c5a6ea.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T23:17:44+08:00 ] 66.249.69.40 /home/act/reviewInfo?id=215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015626s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=215 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\www.wprc365.com\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_user_info.*,think_review.*,think_product_category.name as pname,think_user.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=215 and think_review.checked=1 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=215 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=215 and think_reply.pid in (57,58,59,61,70) order by think_reply.time asc [ RunTime:0.015625s ]
+SQL: select name as `rename` from think_user where id=48 [ RunTime:0.000000s ]
+SQL: select name as `rename` from think_user where id=51 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=215 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=49 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=49 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=49 ) 
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_info` WHERE ( uid= ) LIMIT 1  
+NOTIC: [2] Division by zero E:\www.wprc365.com\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: list E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 117 行.
+NOTIC: [8] Undefined index: loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-06-19T23:42:41+08:00 ] 66.249.69.76 /home/user/userIntro?uid=49
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\www.wprc365.com\Application\Home\Controller\CommonController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( uid=49 and flollow_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( uid=49 and flollow_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.015626s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=49 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: select * from think_review where uid=49 and checked=1 order by time desc limit 0,5 [ RunTime:0.000000s ]
+SQL: select thumb_img,rid from think_review_img where rid in (select * from (select id from think_review where uid=49 and checked=1 order by time desc limit 0,5) as t) [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name E:\www.wprc365.com\Runtime\Cache\Home\088f424a95cb341437cd87d8f1d4296b.php 第 82 行.
+NOTIC: [8] Undefined index: name E:\www.wprc365.com\Runtime\Cache\Home\088f424a95cb341437cd87d8f1d4296b.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

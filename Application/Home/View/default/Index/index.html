@@ -1,0 +1,186 @@
+<include file="Public/header" />
+
+<div class="review_tab" style="margin:0 auto;font-size:14px;">
+	<div class="review_tab_on" style="width:49%">热点差评<p class='ass' style='border-bottom:solid 2px #8E8C8D;width:60%;margin:0 auto;height:1px;'></p></div>
+	<div class="review_tab_off" style="width:49%">潮友动态<p id='ass' style='display:none;border-bottom:solid 2px #8E8C8D;width:60%;margin:0 auto;height:1px;'></p></div>
+</div>
+<!-- <img id="my_xia" src="__APP__/Public/static/img/my_xia.jpg" style="width:20px;height:7px;margin-left:22%;margin-top:-3px;"> -->
+<div id="listmode_hot" style="padding-top:10px;width:96%;margin:0 auto;">
+	<!-- <volist name="listHot" id="list">
+		<div>
+			<p style="background:#DFDFDF;height:30px;line-height:30px;text-align:left;margin:10px auto;">
+				<?php if($list['store_type']==1){echo "地址:".$list['province'].$list['city'].$list['district'].$list['address'];}else{echo "网址:".$list['address'];} ?>
+			</p>
+			<p style="margin:10px auto;font-size:14px;">
+				<span>产品名称:{$list.product_name}</span>
+				<span style="margin-left:20%">产品类别:{$list.name}</span>
+			</p>
+			<p style="margin:10px auto;color:#777777">{$list.content|mb_substr=0,20,"utf-8"}...<a href="__APP__/home/act/reviewInfo?id={$list.id}" style="color:red">详情>></a></p>
+			<p style="margin:10px auto;font-size:14px;">发布时间:{$list.time|date="Y-m-d",###}</p>
+		</div>
+	</volist> -->
+	<volist name="listHot" id="list">
+			<div style="background:white;box-shadow:1px 1px 1px #B8B6B7;border-radius:3px;border:solid 1px #D5D5D5;margin-bottom:10px;">
+		<a href="__APP__/home/user/userIntro?uid={$list.uid}"><img src="<?php if($list['touxiang']){echo '__APP__/Uploads/Picture/User/'.$list['touxiang'];}else{echo '__APP__/Public/static/img/default_big.jpg';} ?>" style="height:40px;width:40px;display:block;float:left;margin:5px 10px;vertical-align: middle;"></a>
+		<p style="float:left;line-height:25px;padding-left:10px;">
+			<a href="__APP__/home/user/userIntro?uid={$list.uid}"><span style="">{$list.uname}</span></a><br>	
+		</p>
+		<p style="clear:both"></p>
+		<a href="__APP__/home/act/reviewInfo?id={$list.id}">
+		<div style="padding:0 10px;margin-bottom:0px;margin-left:60px;margin-top:-30px">
+			<!-- <p style="margin:10px auto;font-size:14px;">
+				<span>产品名称:{$list.product_name}</span>
+				<span style="margin-left:20%">产品类别:{$list.name}</span>
+			</p> -->
+			<p style="margin:10px auto;color:#777777">{$list.content|mb_substr=0,100,"utf-8"}...<!-- <a href="__APP__/home/act/reviewInfo?id={$list.id}" style="color:red">详情>></a> --></p>
+			<div style="">
+				<volist name="list.image" id="arr" offset="0" length='3'>
+					<img src="__APP__/{$arr.thumb_img}" style="width:30%;">&nbsp;&nbsp;
+				</volist>
+			</div>
+			
+			<p style="color:#1C668D">投诉商品名称：{$list.product_name}</p>
+			<p style="color:#1C668D">投诉店家名称：{$list.store_name}</p>
+			<!-- <p style="margin:10px auto;font-size:14px;">发布时间:{$list.time|date="Y-m-d",###}</p> -->
+			
+			<p style="text-align:left;margin:10px auto;WORD-WRAP: break-word;TABLE-LAYOUT: fixed;word-break:break-all">
+				<?php if($list['store_type']==1){echo "<img src='__APP__/Public/static/img/address.jpg' style='height:25px;vertical-align: middle;'>".$list['province'].$list['city'].$list['district'].$list['address'];}else{echo $list['address'];} ?>
+			</p>
+			<span style="color:#898788;font-size:12px;">{$list.time|date="Y-m-d",###}</span>
+		</div>
+		<div style="color:#888785;height:30px;line-height:30px;text-align:center;font-size:12px;border-top:solid 1px #D5D5D5">
+			<p style="width:49%;float:left;border-right:solid 1px #D5D5D5">
+				<img src="__APP__/Public/static/img/pinglun.jpg" style="vertical-align: middle;">&nbsp;({$list.comment_count})</p>
+			<p style="width:49%;float:left">
+				<img src="__APP__/Public/static/img/xingxing.jpg" style="vertical-align: middle;">&nbsp;({$list.collect_count})
+			</p>
+		</div>
+		</a>
+	</div>
+	</volist>
+</div>
+
+<div id="listmode_new" style="display:none;width:96%;margin:0 auto;padding-top:10px;">
+	<!-- <volist name="listNew" id="list">
+		<div>
+			<p style="background:#DFDFDF;height:30px;line-height:30px;text-align:left;margin:10px auto;">
+				<?php if($list['store_type']==1){echo "地址:".$list['province'].$list['city'].$list['district'].$list['address'];}else{echo "网址:".$list['address'];} ?>
+			</p>
+			<p style="margin:10px auto;font-size:14px;">
+				<span>产品名称:{$list.product_name}</span>
+				<span style="margin-left:20%">产品类别:{$list.name}</span>
+			</p>
+			<p style="margin:10px auto;color:#777777">{$list.content|mb_substr=0,20,"utf-8"}...<a href="__APP__/home/act/reviewInfo?id={$list.id}" style="color:red">详情>></a></p>
+			<p style="margin:10px auto;font-size:14px;">发布时间:{$list.time|date="Y-m-d",###}</p>
+		</div>
+	</volist> -->
+	<volist name="listNew" id="list">
+			<div style="background:white;box-shadow:1px 1px 1px #B8B6B7;border-radius:3px;border:solid 1px #D5D5D5;margin-bottom:10px;">
+		<a href="__APP__/home/user/userIntro?uid={$list.uid}"><img src="<?php if($list['touxiang']){echo '__APP__/Uploads/Picture/User/'.$list['touxiang'];}else{echo '__APP__/Public/static/img/default_big.jpg';} ?>" style="height:40px;width:40px;display:block;float:left;margin:5px 10px;vertical-align: middle;"></a>
+		<p style="float:left;line-height:25px;padding-left:10px;">
+			<a href="__APP__/home/user/userIntro?uid={$list.uid}"><span style="">{$list.uname}</span></a><br>	
+		</p>
+		<p style="clear:both"></p>
+		<a href="__APP__/home/act/reviewInfo?id={$list.id}">
+		<div style="padding:0 10px;margin-bottom:0px;margin-left:60px;margin-top:-30px">
+			<!-- <p style="margin:10px auto;font-size:14px;">
+				<span>产品名称:{$list.product_name}</span>
+				<span style="margin-left:20%">产品类别:{$list.name}</span>
+			</p> -->
+			<p style="margin:10px auto;color:#777777">{$list.content|mb_substr=0,100,"utf-8"}...<!-- <a href="__APP__/home/act/reviewInfo?id={$list.id}" style="color:red">详情>></a> --></p>
+			<div style="">
+				<volist name="list.image" id="arr" offset="0" length='3'>
+					<img src="__APP__/{$arr.thumb_img}" style="width:30%;">&nbsp;&nbsp;
+				</volist>
+			</div>
+			
+			<p style="color:#1C668D">投诉商品名称：{$list.product_name}</p>
+			<p style="color:#1C668D">投诉店家名称：{$list.store_name}</p>
+			<!-- <p style="margin:10px auto;font-size:14px;">发布时间:{$list.time|date="Y-m-d",###}</p> -->
+			
+			<p style="text-align:left;margin:10px auto;WORD-WRAP: break-word;TABLE-LAYOUT: fixed;word-break:break-all">
+				<?php if($list['store_type']==1){echo "<img src='__APP__/Public/static/img/address.jpg' style='height:25px;vertical-align: middle;'>".$list['province'].$list['city'].$list['district'].$list['address'];}else{echo $list['address'];} ?>
+			</p>
+			<span style="color:#898788;font-size:12px;">{$list.time|date="Y-m-d",###}</span>
+		</div>
+		<div style="color:#888785;height:30px;line-height:30px;text-align:center;font-size:12px;border-top:solid 1px #D5D5D5">
+			<p style="width:49%;float:left;border-right:solid 1px #D5D5D5">
+				<img src="__APP__/Public/static/img/pinglun.jpg" style="vertical-align: middle;">&nbsp;({$list.comment_count})</p>
+			<p style="width:49%;float:left">
+				<img src="__APP__/Public/static/img/xingxing.jpg" style="vertical-align: middle;">&nbsp;({$list.collect_count})
+			</p>
+		</div>
+		</a>
+	</div>
+	</volist>
+</div>
+<div id="more" style="text-align:center;margin-bottom:20px;">查看更多>></div>
+<script type="text/javascript">
+	//参数初始化
+	var istype="hot";
+	var coun_hot=2;
+	var coun_new=2;
+	var hotclick=1;
+	var newclick=1;
+	//tab切换
+	$('.review_tab div').click(function(){
+		$('.review_tab div').each(function(){
+			$(this).removeClass("review_tab_on");
+			$(this).addClass("review_tab_off");
+		});
+		$(this).addClass("review_tab_on");
+		$(this).removeClass("review_tab_off");
+		if($(this).text()=="热点差评"){
+			$('#listmode_hot').show();
+			$('#listmode_new').hide();
+			// $('#my_xia').css("marginLeft","22%");
+			// $('#my_xia').css("marginTop","-3px");
+			$(this).children('p').show();
+			$(this).next().children('p').hide();
+			istype="hot";
+		}else{
+			$('#listmode_hot').hide();
+			$('#listmode_new').show();
+			$(this).children('p').show();
+			$(this).prev().children('p').hide();
+			// $('#my_xia').css("marginLeft","72%");
+			// $('#my_xia').css("marginTop","-3px");
+			istype="new";
+		}
+	});
+	//列表加载事件
+	$('#more').click(function(){
+		if($('#listmode_hot').css("display")=='none'){
+			coun=coun_new;
+			if(newclick!=1){
+				return false;
+			}
+		}else{
+			coun=coun_hot;
+			if(hotclick!=1){
+				return false;
+			}
+		}
+		$.post('__APP__/Home/Index/getListMore',{coun:coun,istype:istype,listcount:5},function(data){
+			if(data.status==1){
+				if(istype=="new"){
+					coun_new++;
+					$('#listmode_new').append(data.html);
+				}else{
+					coun_hot++;
+					$('#listmode_hot').append(data.html);
+				}
+			}else{
+				if(istype=="new"){
+					$('#listmode_new').append("<div style='text-align:center'>暂无数据</div>");
+					newclick=0;
+				}else{
+					$('#listmode_hot').append("<div style='text-align:center'>暂无数据</div>");
+					hotclick=0;
+				}
+			}
+		},'json');
+	});
+</script>
+
+<include file="Public/footer" />

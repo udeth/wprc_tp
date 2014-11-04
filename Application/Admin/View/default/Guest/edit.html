@@ -1,0 +1,142 @@
+<extend name="Public/base"/>
+
+<block name="body">
+
+	<div class="main-title">
+		<h2>{$meta_title}</h2>
+	</div>
+	<form action="{:U()}" method="post" class="form-horizontal" enctype="multipart/form-data">
+		<div style="border-radius:5px; border:3px solid #fff; padding:10px; width:800px; margin-bottom:10px;">
+		<h4 style="">基本信息</h4>
+		<notempty name="info">
+			<input type="hiddend" class="text input-large" name="id" value="{$info.id|default=""}" />
+		</notempty>
+
+		<div class="form-item">
+			<label class="item-label">账号<span class="check-tips">(账号)</span></label>
+			<div class="controls">
+				<input type="text" class="text input-large" name="account" value="{$info.account|default=""}">
+			</div>
+		</div>
+
+		<div class="form-item">
+			<label class="item-label">EMAIL<span class="check-tips">(EMAIL)</span></label>
+			<div class="controls">
+				<input type="text" class="text input-large" name="email" value="{$info.email|default=""}">
+			</div>
+		</div>
+      
+        <div class="form-item">
+			<label class="item-label">用户别称<span class="check-tips">(用户别称)</span></label>
+			<div class="controls">
+                <input type="text" class="text input-large" name="name" id="name" value="{$info.name}">
+			</div>
+		</div>
+		</div>
+
+		<div style="border-radius:5px; border:3px solid #fff; padding:10px; width:800px; margin-bottom:10px;">
+		<h4 style="">详细信息</h4>
+		<div class="form-item">
+			<label class="item-label">居住地<span class="check-tips">(居住地)</span></label>
+			<div class="controls">
+				<select name="province" id="province">
+					<volist name="area.p" id="vo">
+					<option value="{$vo.province_id}">{$vo.name}</option>
+					</volist>
+				</select>
+				<span>省</span>
+				<select name="city" id="city">
+					<volist name="area.c" id="vo">
+					<option value="{$vo.city_id}">{$vo.name}</option>
+					</volist>
+				</select>
+				<span>市</span>
+				<select name="district" id="district">
+					<volist name="area.d" id="vo">
+					<option value="{$vo.district_id}">{$vo.name}</option>
+					</volist>
+				</select>
+				<span>区</span>
+			</div>
+		</div>
+
+		<div class="form-item">
+			<label class="item-label">个人签名<span class="check-tips">(个人签名)</span></label>
+			<div class="controls">
+				<input type="text" class="text input-large" name="introduction" value="{$info.introduction}">
+			</div>
+		</div>
+
+		<div class="form-item">
+			<label class="item-label">性别<span class="check-tips">(性别)</span></label>
+			<div class="controls">
+				<label class="radio"><input type="radio" name="sex" value="1">男</label>
+                <label class="radio"><input type="radio" name="sex" value="0">女</label>
+			</div>
+		</div>
+		
+		
+		</div>
+
+		<div class="form-item">
+			<button class="btn submit-btn" id="submit" type="submit" target-form="form-horizontal">确定</button>
+			<button class="btn btn-return" onclick="javascript:history.back(-1);return false">返回</button>
+		</div>
+
+	</form>
+
+</block>
+
+<block name="script">
+
+
+	<script type="text/javascript">
+        //导航高亮
+		highlight_subnav('{:U('Guest/index')}');
+		Think.setValue("province",{$info.province|default="1"});
+		Think.setValue("city",{$info.city|default="1"});
+		Think.setValue("district",{$info.district|default="1"});
+		Think.setValue("sex",{$info.sex|default="0"});
+	</script>
+	<script>
+		$(function(){
+			$("#province").change(function(e){
+				var pv = $(this).val();
+				$.ajax({
+					type: 'GET',
+					url: '{:U("getCity")}',
+					data: {pv: pv},
+					dataType: 'json',
+					success: function(response,status,xhr){
+						$("#city, #district").empty();
+						$("#city, #district").prepend("<option value='0'>请选择</option>");
+						$.each(response,function(i,v){
+							//alert(i+v.name)
+							$("#city").append("<option value='"+v.city_id+"'>"+v.name+"</option>");
+						})
+					}
+				});
+			});
+			
+			$("#city").change(function(){
+				var ct = $(this).val();
+				$.ajax({
+					type: 'GET',
+					url: '{:U("getDistrict")}',
+					data: {ct: ct},
+					dataType: 'json',
+					success: function(response,status,xhr){
+						$("#district").empty();
+						$("#district").prepend("<option value='0'>请选择</option>");
+						$.each(response,function(i,v){
+							$("#district").append("<option value='"+v.district_id+"'>"+v.name+"</option>");
+						});
+					}	
+				});
+			});
+		});
+	</script>
+    
+ 
+
+</block>

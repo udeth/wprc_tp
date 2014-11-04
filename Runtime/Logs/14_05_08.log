@@ -1,0 +1,318 @@
+[ 2014-05-08T00:53:13+08:00 ] 66.249.79.45 /home/act/reviewInfo?id=86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=86 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_review.*,think_product_category.name as pname,think_user.*,think_user_info.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=86 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=86 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=86 and think_reply.pid in () order by think_reply.time asc [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by think_reply.time asc' at line 1
+ [ SQL语句 ] : select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=86 and think_reply.pid in () order by think_reply.time asc
+NOTIC: [2] Invalid argument supplied for foreach() E:\wap.sjbmall.net\Application\Home\Model\ReviewModel.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=86 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=1 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=1 ) 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\wap.sjbmall.net\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2014-05-08T02:09:00+08:00 ] 66.249.79.244 /home/act/reviewInfo?id=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=100 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_review.*,think_product_category.name as pname,think_user.*,think_user_info.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=100 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=100 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=100 and think_reply.pid in (9) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=100 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=6 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=6 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=6 ) 
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\wap.sjbmall.net\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-05-08T03:25:07+08:00 ] 66.249.79.13 /home/act/follow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+
+[ 2014-05-08T03:53:07+08:00 ] 66.249.79.244 /home/act/replay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+NOTIC: [8] Undefined index: uid E:\wap.sjbmall.net\Application\Home\Controller\ActController.class.php 第 120 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+NOTIC: [8] Undefined index: rid E:\wap.sjbmall.net\Application\Home\Controller\ActController.class.php 第 123 行.
+NOTIC: [8] Undefined index: content E:\wap.sjbmall.net\Application\Home\Controller\ActController.class.php 第 124 行.
+NOTIC: [8] Undefined index: pid E:\wap.sjbmall.net\Application\Home\Controller\ActController.class.php 第 127 行.
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: INSERT INTO `think_reply` (`uid`,`rid`,`content`,`reuid`,`pid`,`time`) VALUES (null,0,'',0,0,1399492387) [ RunTime:0.000000s ]
+ERR: 1048:Column 'uid' cannot be null
+ [ SQL语句 ] : INSERT INTO `think_reply` (`uid`,`rid`,`content`,`reuid`,`pid`,`time`) VALUES (null,0,'',0,0,1399492387)
+
+[ 2014-05-08T03:53:50+08:00 ] 66.249.79.13 /home/act/collect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+NOTIC: [8] Undefined index: rid E:\wap.sjbmall.net\Application\Home\Controller\ActController.class.php 第 206 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id= [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: UPDATE `think_user_info` SET `favorites`='0,' WHERE ( uid= ) [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `think_user_info` SET `favorites`='0,' WHERE ( uid= )
+
+[ 2014-05-08T03:54:59+08:00 ] 66.249.74.37 /home/act/saveAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+NOTIC: [8] Undefined index: store_type E:\wap.sjbmall.net\Application\Home\Controller\ActController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: INSERT INTO `think_review` (`time`,`checked`,`uid`) VALUES (1399492499,0,null) [ RunTime:0.000000s ]
+ERR: 1048:Column 'uid' cannot be null
+ [ SQL语句 ] : INSERT INTO `think_review` (`time`,`checked`,`uid`) VALUES (1399492499,0,null)
+
+[ 2014-05-08T03:56:02+08:00 ] 66.249.79.244 /home/act/saveAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+NOTIC: [8] Undefined index: store_type E:\wap.sjbmall.net\Application\Home\Controller\ActController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: INSERT INTO `think_review` (`time`,`checked`,`uid`) VALUES (1399492562,0,null) [ RunTime:0.000000s ]
+ERR: 1048:Column 'uid' cannot be null
+ [ SQL语句 ] : INSERT INTO `think_review` (`time`,`checked`,`uid`) VALUES (1399492562,0,null)
+
+[ 2014-05-08T03:57:19+08:00 ] 66.249.79.13 /home/act/reviewInfo?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=0 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_review.*,think_product_category.name as pname,think_user.*,think_user_info.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=0 limit 1 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\wap.sjbmall.net\Application\Home\Model\ReviewModel.class.php 第 41 行.
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=0 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=0 and think_reply.pid in () order by think_reply.time asc [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by think_reply.time asc' at line 1
+ [ SQL语句 ] : select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=0 and think_reply.pid in () order by think_reply.time asc
+NOTIC: [2] Invalid argument supplied for foreach() E:\wap.sjbmall.net\Application\Home\Model\ReviewModel.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=0 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wap.sjbmall.net\Application\Home\Model\ReviewModel.class.php 第 60 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid= )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid= ) 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-05-08T04:15:01+08:00 ] 66.249.79.45 /home/act/saveAdd?store_type=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: INSERT INTO `think_review` (`store_type`,`time`,`checked`,`uid`) VALUES ('',1399493701,0,null) [ RunTime:0.000000s ]
+ERR: 1048:Column 'uid' cannot be null
+ [ SQL语句 ] : INSERT INTO `think_review` (`store_type`,`time`,`checked`,`uid`) VALUES ('',1399493701,0,null)
+
+[ 2014-05-08T05:30:37+08:00 ] 66.249.79.45 /home/act/reviewInfo?id=88&P=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=88 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_review.*,think_product_category.name as pname,think_user.*,think_user_info.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=88 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=88 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=88 and think_reply.pid in (4) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=88 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=1 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=1 ) 
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\wap.sjbmall.net\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-05-08T06:46:24+08:00 ] 66.249.79.244 /home/act/reviewInfo?id=100&P=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=100 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_review.*,think_product_category.name as pname,think_user.*,think_user_info.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=100 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=100 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=100 and think_reply.pid in (9) order by think_reply.time asc [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=100 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=6 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=6 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=6 ) 
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\wap.sjbmall.net\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-05-08T14:49:19+08:00 ] 14.17.18.147 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  comment_count desc   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+

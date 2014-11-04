@@ -1,0 +1,100 @@
+<?php
+namespace Home\Model;
+use Think\Model;
+
+/**
+ * 用户模型
+ */
+
+class UserModel extends Model {
+
+	public function __construct($table){
+
+		$this->tableName=$table;
+		parent::__construct();
+	}
+
+	public function test1(){
+
+		return 'aaaaabbbbb';
+	}
+
+	/**
+	 *获取用户信息
+	 *@param $userName
+	 */
+	public function getUserInfo($userName){
+		$where=" `account`='".$userName."'";
+		return $this->where($where)->find();
+	}
+
+	/**
+	 *获取用户全部信息
+	 *@param $userId int
+	 *@return $result array
+	 */
+	public function getUserInfoAll($userId){
+
+		$model=M();
+		$sql="select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=".$userId;
+		$result=$model->query($sql);
+		return $result;
+	}
+
+	/**
+	 *更新用户资料
+	 *@param $userId  int 用户id
+	 *@param $data  array 更新的数据
+	 *@return boolen
+	 */
+	public function changeInfo($userId,$data){
+
+		$model=M();
+		$data1=array();
+		$data1['name']=$data['name'];
+		unset($data['name']);
+		$result1=$this->where('id='.$id)->update($data1);
+		$result2=M()->table('user')->where('uid='.$id)->update($data);
+		if($result1 && $result2){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	/**
+	 *获取用户的关注列表
+	 *@param $userId int
+	 *@return arr
+	 */
+	public function getFllowList($userId,$star,$end){
+
+		$result=M()->table("think_follow as f")->join("think_user as u on f.uid=u.id")->join("think_user_info as i on f.uid=i.uid")->where('f.flollow_id='.$userId)->limit($star,$end)->select();
+		// echo M()->getLastSql();die;
+		return $result;
+	}
+
+	/**
+	 *获取用户的粉丝列表
+	 *@param $userId  int
+	 *@return arr
+	 */
+	public function getbFllowList($userId,$star,$end){
+
+		$result=M()->table("think_follow as f")->join("think_user as u on f.flollow_id=u.id")->join("think_user_info as i on f.flollow_id=i.uid")->where('f.uid='.$userId)->limit($star,$end)->select();
+		// echo M()->getLastSql();die;
+		return $result;
+	}
+
+
+	/**
+	 *
+	 */
+	
+}
+
+
+
+
+
+?>

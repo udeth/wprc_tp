@@ -1,0 +1,176 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+/**
+ *首页控制器
+ */
+class IndexController extends CommonController {
+
+	public function __construct(){
+
+		// $this->isLogin();
+		parent::__construct();
+    header("Content-type:text/html;charset=utf-8");
+	}
+
+	/**
+	 *首页
+	 */
+    public function index(){
+        
+      /*import("Lib/Page");   //引入分页类
+      $count=M()->table("think_review as r")->where($where)->count();
+      $page=new \Page($count,5);*/
+      $listHot=M()->field("r.*,p.name,u.name as uname,r.image as touxiang")->table("think_review as r")->join("think_product_category as p on r.product_category_id=p.id")->join("think_user as u on r.uid=u.id")->order(" comment_count desc ")->join("think_user_info as i on i.uid=r.uid")->limit(0,5)->select();
+      $listNew=M()->field("r.*,p.name,u.name as uname,r.image as touxiang")->table("think_review as r")->join("think_product_category as p on r.product_category_id=p.id")->join("think_user as u on r.uid=u.id")->order(" time desc ")->join("think_user_info as i on i.uid=r.uid")->limit($page->firstRow,$limit->listRows)->select();
+      // echo M()->getLastSql();die;
+      foreach($listHot as $k=>$v){
+        $sql="select `image` from think_review_img where rid=".$v['id'];
+        $imgArr=M()->query($sql);
+        if($v['image']){
+          $imgArr[]=array('image'=>$v['image']);
+        }
+        $listHot[$k]['image']=$imgArr;
+      }
+      foreach($listNew as $k=>$v){
+        $sql="select `image` from think_review_img where rid=".$v['id'];
+        $imgArr=M()->query($sql);
+        if($v['image']){
+          $imgArr[]=array('image'=>$v['image']);
+        }
+        $listNew[$k]['image']=$imgArr;
+      }
+      // print_r($listHot);die;
+      $this->assign('listNew',$listNew);
+      $this->assign('listHot',$listHot);
+      $this->assign('act','index');
+      // $this->assign('page',$page->show());
+      $this->display();
+    }
+
+    /*
+    */
+    public function searchIndex(){
+
+      $this->assign('act','search');
+      $this->display();
+    }
+
+
+    /**
+	   *搜索结果
+	   */
+    public function search(){
+
+      $this->assign('act','search');
+      $kword=trim($_REQUEST['kword']);
+      if($_REQUEST['shiti']&&!$_REQUEST['wangzhi']){
+        $where=" r.store_type=1 ";
+        $where.=" and r.store_name like '%".$kword."%' ";
+        if($_REQUEST['province']){
+          $where.=" and r.province like '%".$_REQUEST['province']."%' ";
+        }
+        if($_REQUEST['city']){
+          $where.=" and r.city like '%".$_REQUEST['city']."%' ";
+        }
+        if($_REQUEST['county']){
+          $where.=" and r.district like '%".$_REQUEST['county']."%' ";
+        }
+      }elseif(!$_REQUEST['shiti']&&$_REQUEST['wangzhi']){
+        $where=" r.store_type=0 ";
+        $where.=" and r.address like '%".$kword."%' ";
+      }else{
+        $where=" r.store_type in (0,1) ";
+        $where.=" and (r.address like '%".$kword."%' or r.store_name like '%".$kword."%' ) ";
+      }
+      
+      import("Lib/Page");   //引入分页类
+      $count=M()->table("think_review as r")->where($where)->count();
+      // echo M()->getLastSql();die;
+      $page=new \Page($count,10);
+      $list=M()->table("think_review as r")->join("think_product_category as p on r.product_category_id=p.id")->where($where)->order(" time desc ")->limit($page->firstRow,$limit->listRows)->select();
+      // echo M()->getLastSql();die;
+      // print_r($list);die;
+      $this->assign('list',$list);
+      $this->assign('kword',$kword);
+      $this->assign('page',$page->show());
+      $this->assign('store_type',intval($_REQUEST['store_type']));
+      $this->display();
+    }
+
+
+    public function research(){
+
+      // print_r($_POST);die;
+      $kword=trim($_REQUEST['kword']);   //第一次查询的关键字
+      $store_type=intval($_REQUEST['store_type']);   //第一次查询的类型
+      $product=trim($_REQUEST['product']);
+      $province=trim($_REQUEST['province']);
+      $city=trim($_REQUEST['city']);
+      $county=trim($_REQUEST['county']);
+
+      $where=" r.store_type=".$store_type;
+      if($store_type==1){
+        $where.=" and r.store_name like '%".$kword."%' ";
+      }else{
+        $where.=" and r.address like '%".$kword."%' ";
+      }
+
+      if($province){
+        $where.=" and r.province like '%".$province."%' ";
+      }
+      if($city){
+        $where.=" and r.city like '%".$city."%' ";
+      }
+      if($county){
+        $where.=" and r.district like '%".$county."%' ";
+      }
+      if($product){
+        $where.=" and r.product_name like '%".$product."%' ";
+      }
+
+      /*import("Lib/Page");   //引入分页类
+      $count=M()->table("think_review as r")->where($where)->count();
+      $page=new \Page($count,10);*/
+      $list=M()->table("think_review as r")->join("think_product_category as p on r.product_category_id=p.id")->where($where)->order(" time desc ")->limit(0,5)->select();
+
+      $this->assign('list',$list);
+      $this->assign('kword',$kword);
+      $this->assign('product',$product);
+      // $this->assign('page',$page->show());
+      $this->assign('store_type',intval($_REQUEST['store_type']));
+      $this->display();
+    }
+
+    /**
+     *ajax获取更多列表
+     */
+    public function getListMore(){
+
+      $listcount=intval($_POST['listcount']);
+      if($_POST['istype']=="hot"){
+        $order=" comment_count desc ";
+      }else{
+        $order=" time desc ";
+      }
+      $coun=$_POST['coun'];
+      $list=M()->field("r.*,p.name,u.name as uname,i.image as touxiang")->table("think_review as r")->join("think_product_category as p on r.product_category_id=p.id")->join("think_user as u on r.uid=u.id")->join("think_user_info as i on i.uid=r.uid")->order($order)->limit(($coun-1)*$listcount,$coun*$listcount)->select();
+      foreach($list as $k=>$v){
+        $sql="select `image` from think_review_img where rid=".$v['id'];
+        $imgArr=M()->query($sql);
+        if($v['image']){
+          $imgArr[]=array('image'=>$v['image']);
+        }
+        $list[$k]['image']=$imgArr;
+      }
+      if(empty($list)){
+        exit(json_encode(array('status'=>0)));
+      }
+      // print_r($list);die;
+      // echo M()->getLastSql();die;
+      $this->assign('list',$list);
+      $html=$this->fetch("Index:getlistmore.widget");
+      echo json_encode(array('status'=>1,'html'=>$html));
+    }
+
+}

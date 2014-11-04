@@ -1,0 +1,69 @@
+<extend name="Public/base"/>
+
+<block name="style">
+	<style type="text/css">
+		#detail th{
+			width:100px;
+		}
+		#detail img.small{
+			height:150px;
+		}
+	</style>
+</block>
+
+<block name="script">
+	<script type="text/javascript" src="__STATIC__/picbox/js/picbox.js"></script>
+	<link rel="stylesheet" href="__STATIC__/picbox/css/picbox.css" type="text/css" media="screen" />
+    <script type="text/javascript">
+        highlight_subnav('{:U('Reply/index')}');	// 导航高亮
+    </script>
+</block>
+
+
+<block name="body">
+    <div class="main-title">
+        <h2>评论详情</h2>
+    </div>
+	<div class="data-table table-striped">
+    <form action="{:U()}" method="post" class="form-horizontal" enctype="multipart/form-data">
+	<div class="form-item">
+		<table id="detail" class="">
+			<tr>
+				<th>用户名</th>
+				<td>{$data.user_name}</td>
+				<th>时间</th>
+				<td>{$data.time}</td>
+			</tr>
+			<tr>
+				<th>评论内容</th>
+				<td colspan="3">{$data.content}</td>
+			</tr>
+			<tr>
+				<th>父评论用户</th>
+				<td>{$data.puser_name}</td>
+				<th>父评论时间</th>
+				<td>{$data.ptime}</td>
+			</tr>
+			<tr>
+				<th>父评论内容</th>
+				<td colspan="3">{$data.pcontent}</td>
+			</tr>
+			<tr>
+				<th>网评用户</th>
+				<td>{$data.ruser_name}</td>
+				<th>网评时间</th>
+				<td>{$data.rtime}</td>
+			</tr>
+			<tr>
+				<th>网评内容</th>
+				<td colspan="3">{$data.rcontent}</td>
+			</tr>
+		</table>
+		</div>
+        <div class="form-item">
+			<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+	</div>
+</block>
+

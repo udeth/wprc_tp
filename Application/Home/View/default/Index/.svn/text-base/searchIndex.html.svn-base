@@ -1,0 +1,53 @@
+<include file="Public/header" />
+
+<div style="border:solid 1px red;border-radius:3px;width:96%;margin:10px auto;margin-top:120px;">
+	<div style="height:40px;width:94%;margin:10px auto;margin-top:30px;">
+		<input placeholder="请输入网址\实体店店名" type="text" id="content" style="height:40px;vertical-align: middle;width:80%">
+		<img id="search" src="__APP__/Public/static/img/search.jpg" style="vertical-align: middle;height:40px;">
+	</div>
+	<div style="text-align:center">
+		<input type="checkbox" id="wangzhi" value="wangzhi">&nbsp;&nbsp;查网址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="checkbox" id="shiti" value="shiti">&nbsp;&nbsp;查实体店
+	</div>
+	<div style="width:96%;margin:10 auto">
+		<div id="area" style="overflow:hidden">
+			<span style="display:block;float:left;font-size:16px;">地区:</span>
+			<div class="t1" style="float:left;margin-left:10px;margin-bottom:0">
+	            <select name="province" id="province">
+	            </select>
+	            <select name="city" id="city">
+	            </select>
+                <select name="county" id="county">
+                </select>
+	        </div>
+       	</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	setup();
+	var url="__APP__/home/index/search?"
+	//执行搜索操作
+	$('#search').click(function(){
+		if($('#shiti').prop("checked")){
+			url+="shiti=1&";
+		}
+		if($('#wangzhi').prop("checked")){
+			url+="wangzhi=1&";
+		}
+		if($('#province').val()!="省份"){
+			url+="province="+$('#province').val()+"&";
+		}
+		if($('#city').val()!="地级市"){
+			url+="city="+$('#city').val()+"&";
+		}
+		if($('#county').val()!="市、县级市、县"){
+			url+="county="+$('#county').val()+"&";
+		}
+		url+="&kword="+$('#content').val();
+		window.location.href=url;
+	});
+
+</script>
+
+<include file="Public/footer" />

@@ -1,0 +1,46 @@
+<?php if(empty($data['list'])){echo"暂无收藏信息!";} ?>
+<!-- <volist name="data.list" id="list"> -->
+		<div style="border:solid 1px #D4D0D1;margin-top:10px;">
+		<a href="__APP__/home/act/reviewInfo?id={$list.id}">
+			<div style="padding:0 10px">
+				<p style="color:#1C668D">商品名称：{$list.product_name}</p>
+				<!-- <p style="margin:10px auto;font-size:14px;">
+					<span>产品名称:{$list.product_name}</span>
+					<span style="margin-left:20%">产品类别:{$list.name}</span>
+				</p> -->
+				<p style="margin:10px auto;color:#777777">{$list.content|mb_substr=0,50,"utf-8"}...<!-- <a href="__APP__/home/act/reviewInfo?id={$list.id}" style="color:red">详情>></a> --></p>
+				<div>
+					<volist name="list.image" id="arr">
+						<img src="__APP__/{$arr.thumb_img}" style="width:30%">&nbsp;&nbsp;
+					</volist>
+				</div>
+				
+				<p style="text-align:left;margin:10px auto;WORD-WRAP: break-word;TABLE-LAYOUT: fixed;word-break:break-all">
+				<?php if($list['store_type']==1){echo "<img src='__APP__/Public/static/img/address.jpg' style='height:25px;vertical-align: middle;'>".$list['province'].$list['city'].$list['district'].$list['address'];}else{echo $list['address'];} ?>
+				</p>
+				<p style="margin:10px auto;font-size:14px;">发布时间:{$list.time|date="Y-m-d",###}</p>
+			</div>
+			<div style="color:#888785;height:30px;line-height:30px;text-align:center;font-size:12px;border-top:solid 1px #D5D5D5">
+				<p style="width:49%;float:left;border-right:solid 1px #D5D5D5">
+					<img src="__APP__/Public/static/img/pinglun.jpg" style="vertical-align: middle;">&nbsp;({$list.comment_count})</p>
+				<p style="width:49%;float:left">
+					<img src="__APP__/Public/static/img/xingxing.jpg" style="vertical-align: middle;">&nbsp;({$list.collect_count})
+				</p>
+			</div>
+		</a>
+		</div>
+	<!-- </volist> -->
+
+	<script type="text/javascript">
+	$('.delcollect').click(function(){
+		var dom=$(this).parent().parent();
+		$.post('__APP__/home/act/delCollect',{rid:$(this).attr("rid")},function(data){
+			alert(data.msg);
+			if(data.status==1){
+				dom.hide();
+			}
+		},'json');
+	});
+	</script>
+
+	

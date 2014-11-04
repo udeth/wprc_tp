@@ -1,0 +1,56 @@
+<volist name="list" id="list">
+	<div class="home_index_list">
+		<div style="padding:10px;">
+			<div class="relative">
+				<a href="__APP__/home/user/userIntro?uid={$list.uid}">
+					<if condition="$list.touxiang eq ''">
+						<img src="__APP__/Public/static/img/default_big.jpg" class="homo_list_touxiang">
+					<else />
+						<img src="__APP__/Uploads/Picture/User/{$list.touxiang}"  class="homo_list_touxiang">
+					</if>
+				</a>
+				<div class="absolute home_list_name">
+					<a href="__APP__/home/user/userIntro?uid={$list.uid}">{$list.uname}</a><br>
+					
+				</div>
+			</div>
+			<div style="margin-left:65px;">
+				<div class="mbottom tow_em font18">
+					{$list.content|mb_substr=0,120,'utf-8'}
+				</div>
+				<p class="mbottom">
+					<volist name="list.image" id="arr">
+						<img src="__APP__/{$arr.thumb_img}">&nbsp;&nbsp;&nbsp;
+					</volist>
+				</p>
+				<p class="mbottom goods_color">
+					投诉商品名称：{$list.product_name}
+				</p>
+				<p class="mbottom goods_color">
+					投诉店家名称：{$list.store_name}
+				</p>
+				<p class="mbottom hone_index_address">
+					<if condition="$list.store_type eq 1">
+						<img src="__APP__/Public/static/img/address.jpg" class="img_middle" style="height:25px;">
+						{$list.province}{$list.city}{$list.district}{$list.address}
+					<else />
+						{$list.address}
+					</if>
+				</p>
+				<span class="gry_small">{$list.time|date="Y-m-d h:i:s",###}</span>
+			</div>
+		</div>
+		<a href="__APP__/home/act/reviewInfo?id={$list.id}">
+			<div class="index_list_bottom">
+				<div class="index_list_bottom_div" style="border-right:solid 1px #D5D5D5">
+					<img src="__APP__/Public/static/img/pinglun.jpg" class="img_middle">
+					（{$list.comment_count}）
+				</div>
+				<div class="index_list_bottom_div">
+					<img src="__APP__/Public/static/img/xingxing.jpg" class="img_middle">
+					（{$list.collect_count}）
+				</div>
+			</div>
+		</a>
+	</div>
+</volist>

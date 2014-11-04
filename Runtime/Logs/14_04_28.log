@@ -1,0 +1,1321 @@
+[ 2014-04-28T09:32:14+08:00 ] 112.94.203.151 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: where E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM think_review as r LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  time desc   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  comment_count desc   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T09:32:16+08:00 ] 112.94.203.151 /home/act/addreview
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: type E:\wap.sjbmall.net\Application\Home\Controller\ActController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T09:35:09+08:00 ] 112.94.203.151 /home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T10:41:48+08:00 ] 112.94.203.151 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: where E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM think_review as r LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  time desc   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  comment_count desc   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T10:52:27+08:00 ] 112.94.203.151 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: where E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM think_review as r LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  time desc   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  comment_count desc   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T10:52:50+08:00 ] 112.94.203.151 /home/act/reviewInfo?id=89
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=89 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_review.*,think_product_category.name as pname,think_user.*,think_user_info.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=89 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=89 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=89 and think_reply.pid in () order by think_reply.time asc [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by think_reply.time asc' at line 1
+ [ SQL语句 ] : select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=89 and think_reply.pid in () order by think_reply.time asc
+NOTIC: [2] Invalid argument supplied for foreach() E:\wap.sjbmall.net\Application\Home\Model\ReviewModel.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=89 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=1 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=1 ) 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\wap.sjbmall.net\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T10:53:13+08:00 ] 112.94.203.151 /home/index/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM think_review as r WHERE (  r.store_type=0 and r.address like '%jd%'  ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 48 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  WHERE (  r.store_type=0 and r.address like '%jd%'  ) ORDER BY  time desc   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T10:53:22+08:00 ] 112.94.203.151 /home/index/research
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+NOTIC: [8] Undefined index: province E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 65 行.
+NOTIC: [8] Undefined index: city E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 66 行.
+NOTIC: [8] Undefined index: county E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM think_review as r WHERE (  r.store_type=0 and r.address like '%jd%'  and r.product_name like '%苹果%'  ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 92 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  WHERE (  r.store_type=0 and r.address like '%jd%'  and r.product_name like '%苹果%'  ) ORDER BY  time desc   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 90 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T11:12:46+08:00 ] 112.94.203.151 /home/index/research
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+NOTIC: [8] Undefined index: kword E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 63 行.
+NOTIC: [8] Undefined index: store_type E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 64 行.
+NOTIC: [8] Undefined index: product E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 65 行.
+NOTIC: [8] Undefined index: province E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 66 行.
+NOTIC: [8] Undefined index: city E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined index: county E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 68 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.015625s ]
+SQL: SELECT * FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  WHERE (  r.store_type=0 and r.address like '%%'  ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: store_type E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page E:\wap.sjbmall.net\Runtime\Cache\Home\6e7a9b8d0de5d103a4d543b4c3ebf440.php 第 80 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T11:12:50+08:00 ] 112.94.203.151 /home/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  comment_count desc   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T11:12:52+08:00 ] 112.94.203.151 /Home/Index/getListMore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  comment_count desc  LIMIT 5,10   [ RunTime:0.000000s ]
+
+[ 2014-04-28T11:12:57+08:00 ] 112.94.203.151 /home/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  comment_count desc   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T11:36:06+08:00 ] 180.153.206.23 /home/act/reviewInfo?id=89
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_reply` WHERE ( rid=89 and pid=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+SQL: select think_review.*,think_product_category.name as pname,think_user.*,think_user_info.* from think_review inner join think_product_category on think_review.product_category_id=think_product_category.id inner join think_user on think_review.uid=think_user.id inner join think_user_info on think_review.uid=think_user_info.uid where think_review.id=89 limit 1 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=89 and think_reply.pid=0 order by think_reply.time asc limit 0,10 [ RunTime:0.000000s ]
+SQL: select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=89 and think_reply.pid in () order by think_reply.time asc [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by think_reply.time asc' at line 1
+ [ SQL语句 ] : select think_reply.*,think_user.name,think_user_info.image from think_reply inner join think_user on think_reply.uid=think_user.id inner join think_user_info on think_reply.uid=think_user_info.uid where think_reply.rid=89 and think_reply.pid in () order by think_reply.time asc
+NOTIC: [2] Invalid argument supplied for foreach() E:\wap.sjbmall.net\Application\Home\Model\ReviewModel.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `think_review_img` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_review_img` WHERE ( rid=89 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_follow` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=1 )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_follow` WHERE ( flollow_id= and uid=1 ) 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\wap.sjbmall.net\Runtime\Cache\Home\9b9bfc4f3028d7e9b3f80aa9355ffb61.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T11:36:26+08:00 ] 180.153.206.21 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  comment_count desc   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T12:06:34+08:00 ] 180.153.211.190 /home/index/research
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+NOTIC: [8] Undefined index: kword E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 63 行.
+NOTIC: [8] Undefined index: store_type E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 64 行.
+NOTIC: [8] Undefined index: product E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 65 行.
+NOTIC: [8] Undefined index: province E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 66 行.
+NOTIC: [8] Undefined index: city E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined index: county E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 68 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  WHERE (  r.store_type=0 and r.address like '%%'  ) ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: store_type E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page E:\wap.sjbmall.net\Runtime\Cache\Home\6e7a9b8d0de5d103a4d543b4c3ebf440.php 第 80 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T12:06:57+08:00 ] 101.226.33.201 /home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  comment_count desc   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:04+08:00 ] 112.94.203.151 /home/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  comment_count desc   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:07+08:00 ] 112.94.203.151 /Home/Index/getListMore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  comment_count desc  LIMIT 5,10   [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:12+08:00 ] 112.94.203.151 /Home/Index/getListMore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  time desc  LIMIT 5,10   [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:15+08:00 ] 112.94.203.151 /home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\UserController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: name E:\wap.sjbmall.net\Runtime\Cache\Home\b171d71961885d3bf0f7a9b2e0867b01.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:17+08:00 ] 112.94.203.151 /home/user/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:28+08:00 ] 112.94.203.151 /home/user/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `think_user` WHERE (  `account`='yhm' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `think_user` (`account`,`password`,`name`) VALUES ('yhm','021af4108934c33c76b5db84b8e8a01d','yhm') [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user` WHERE (  `account`='yhm' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.000000s ]
+SQL: INSERT INTO `think_user_info` (`ip`,`uid`,`time`) VALUES (1885260695,'7',1398663688) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user` WHERE (  `account`='yhm' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:29+08:00 ] 112.94.203.151 /home/user/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:29+08:00 ] 112.94.203.151 /home/user/getindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=7 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.015625s ]
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  1=1  order by  time desc  limit 0,3 [ RunTime:0.000000s ]
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  1=1  order by  comment_count desc  limit 0,3 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+
+[ 2014-04-28T13:41:33+08:00 ] 112.94.203.151 /Home/Index/getListMore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  comment_count desc  LIMIT 3,6   [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:38+08:00 ] 112.94.203.151 /Home/Index/getListMore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  time desc  LIMIT 3,6   [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:40+08:00 ] 112.94.203.151 /home/user/myReview
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid=7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  uid=7  order by  time desc  limit 0,5 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:41+08:00 ] 112.94.203.151 /home/user/myMsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_message as m INNER JOIN think_user as u on m.fid=u.id INNER JOIN think_review as r on m.review_id=r.id  WHERE ( m.uid=7 and readed=0 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'm.fid' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM think_message as m INNER JOIN think_user as u on m.fid=u.id INNER JOIN think_review as r on m.review_id=r.id  WHERE ( m.uid=7 and readed=0 ) 
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_reply as r INNER JOIN think_user as u on r.reuid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.reuid=7 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'r.reuid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM think_reply as r INNER JOIN think_user as u on r.reuid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.reuid=7 ) 
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_reply as r INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.uid=7 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:42+08:00 ] 112.94.203.151 /home/user/myMsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_message as m INNER JOIN think_user as u on m.fid=u.id INNER JOIN think_review as r on m.review_id=r.id  WHERE ( m.uid=7 and readed=0 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'm.fid' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM think_message as m INNER JOIN think_user as u on m.fid=u.id INNER JOIN think_review as r on m.review_id=r.id  WHERE ( m.uid=7 and readed=0 ) 
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_reply as r INNER JOIN think_user as u on r.reuid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.reuid=7 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'r.reuid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM think_reply as r INNER JOIN think_user as u on r.reuid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.reuid=7 ) 
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.015625s ]
+SQL: SELECT * FROM think_reply as r INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.uid=7 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+
+[ 2014-04-28T13:41:45+08:00 ] 112.94.203.151 /home/user/myCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=7 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( id in () ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( id in () ) LIMIT 1  
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where r.id in () order by  time desc  limit 0,5 [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by  time desc  limit 0,5' at line 1
+ [ SQL语句 ] : select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where r.id in () order by  time desc  limit 0,5
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:46+08:00 ] 112.94.203.151 /home/user/myCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=7 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( id in () ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( id in () ) LIMIT 1  
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where r.id in () order by  time desc  limit 0,5 [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by  time desc  limit 0,5' at line 1
+ [ SQL语句 ] : select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where r.id in () order by  time desc  limit 0,5
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:46+08:00 ] 112.94.203.151 /home/user/myMsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_message as m INNER JOIN think_user as u on m.fid=u.id INNER JOIN think_review as r on m.review_id=r.id  WHERE ( m.uid=7 and readed=0 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'm.fid' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM think_message as m INNER JOIN think_user as u on m.fid=u.id INNER JOIN think_review as r on m.review_id=r.id  WHERE ( m.uid=7 and readed=0 ) 
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_reply as r INNER JOIN think_user as u on r.reuid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.reuid=7 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'r.reuid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM think_reply as r INNER JOIN think_user as u on r.reuid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.reuid=7 ) 
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_reply as r INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.uid=7 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:47+08:00 ] 112.94.203.151 /home/user/myReview
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid=7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  uid=7  order by  time desc  limit 0,5 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:41:48+08:00 ] 112.94.203.151 /home/user/getindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=7 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  1=1  order by  time desc  limit 0,3 [ RunTime:0.000000s ]
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  1=1  order by  comment_count desc  limit 0,3 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:44:49+08:00 ] 112.94.203.151 /home/user/myReview
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid=7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  uid=7  order by  time desc  limit 0,5 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:44:52+08:00 ] 112.94.203.151 /home/user/myMsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_message as m INNER JOIN think_user as u on m.fid=u.id INNER JOIN think_review as r on m.review_id=r.id  WHERE ( m.uid=7 and readed=0 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'm.fid' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM think_message as m INNER JOIN think_user as u on m.fid=u.id INNER JOIN think_review as r on m.review_id=r.id  WHERE ( m.uid=7 and readed=0 ) 
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_reply as r INNER JOIN think_user as u on r.reuid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.reuid=7 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'r.reuid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM think_reply as r INNER JOIN think_user as u on r.reuid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.reuid=7 ) 
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_reply as r INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.uid=7 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:44:53+08:00 ] 112.94.203.151 /home/user/myCollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=7 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( id in () ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( id in () ) LIMIT 1  
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where r.id in () order by  time desc  limit 0,5 [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by  time desc  limit 0,5' at line 1
+ [ SQL语句 ] : select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where r.id in () order by  time desc  limit 0,5
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:44:54+08:00 ] 112.94.203.151 /home/user/myReview
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_review` WHERE ( uid=7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 52 行.
+NOTIC: [8] Undefined index: P E:\wap.sjbmall.net\Application\Lib\Page.class.php 第 54 行.
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  uid=7  order by  time desc  limit 0,5 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:44:54+08:00 ] 112.94.203.151 /home/user/myMsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_message` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_message as m INNER JOIN think_user as u on m.fid=u.id INNER JOIN think_review as r on m.review_id=r.id  WHERE ( m.uid=7 and readed=0 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'm.fid' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM think_message as m INNER JOIN think_user as u on m.fid=u.id INNER JOIN think_review as r on m.review_id=r.id  WHERE ( m.uid=7 and readed=0 ) 
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_reply as r INNER JOIN think_user as u on r.reuid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.reuid=7 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'r.reuid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM think_reply as r INNER JOIN think_user as u on r.reuid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.reuid=7 ) 
+SQL: SHOW COLUMNS FROM `think_reply` [ RunTime:0.000000s ]
+SQL: SELECT * FROM think_reply as r INNER JOIN think_user as u on r.uid=u.id INNER JOIN think_review as e on e.id=r.rid  WHERE ( r.uid=7 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:47:20+08:00 ] 112.94.203.151 /home/user/getindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=7 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  1=1  order by  time desc  limit 0,3 [ RunTime:0.000000s ]
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  1=1  order by  comment_count desc  limit 0,3 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:49:49+08:00 ] 112.94.203.151 /home/user/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$isLogin E:\wap.sjbmall.net\Runtime\Cache\Home\101a520ac446b48d7a87266436dd71e7.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T13:49:49+08:00 ] 112.94.203.151 /home/user/getindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=7 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  1=1  order by  time desc  limit 0,3 [ RunTime:0.000000s ]
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  1=1  order by  comment_count desc  limit 0,3 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T14:20:33+08:00 ] 183.60.35.78 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  time desc  LIMIT 0,5   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: limit E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Trying to get property of non-object E:\wap.sjbmall.net\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: SELECT r.*,p.name FROM think_review as r INNER JOIN think_product_category as p on r.product_category_id=p.id  ORDER BY  comment_count desc   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$isLogin E:\wap.sjbmall.net\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T14:42:21+08:00 ] 101.226.33.227 /home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\UserController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: name E:\wap.sjbmall.net\Runtime\Cache\Home\b171d71961885d3bf0f7a9b2e0867b01.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2014-04-28T14:42:51+08:00 ] 101.226.66.172 /home/user/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T15:05:35+08:00 ] 112.94.203.151 /home/user/follow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: type E:\wap.sjbmall.net\Application\Home\Controller\UserController.class.php 第 233 行.
+NOTIC: [8] Undefined variable: userId E:\wap.sjbmall.net\Application\Home\Controller\UserController.class.php 第 236 行.
+SQL: select u.id,u.name from think_follow as f left join think_user as u on f.uid=u.id where u.id= [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select u.id,u.name from think_follow as f left join think_user as u on f.uid=u.id where u.id=
+NOTIC: [8] Undefined index: type E:\wap.sjbmall.net\Application\Home\Controller\UserController.class.php 第 238 行.
+ERR: 模板不存在:./Application/Home/View/default/User/follow.html
+
+[ 2014-04-28T15:05:41+08:00 ] 112.94.203.151 /home/user/getindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=7 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  1=1  order by  time desc  limit 0,3 [ RunTime:0.000000s ]
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  1=1  order by  comment_count desc  limit 0,3 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T17:12:04+08:00 ] 112.94.203.151 /home/user/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$isLogin E:\wap.sjbmall.net\Runtime\Cache\Home\101a520ac446b48d7a87266436dd71e7.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T17:12:04+08:00 ] 112.94.203.151 /home/user/getindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: select * from think_user as u left join think_user_info as i on u.id=i.uid where u.id=7 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_review` [ RunTime:0.000000s ]
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  1=1  order by  time desc  limit 0,3 [ RunTime:0.000000s ]
+SQL: select r.*,p.name from think_review as r left join think_product_category as p on r.product_category_id=p.id where  1=1  order by  comment_count desc  limit 0,3 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+
+[ 2014-04-28T17:12:54+08:00 ] 112.94.203.151 /home/user/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$isLogin E:\wap.sjbmall.net\Runtime\Cache\Home\101a520ac446b48d7a87266436dd71e7.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2014-04-28T17:12:54+08:00 ] 112.94.203.151 /home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\UserController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: name E:\wap.sjbmall.net\Runtime\Cache\Home\b171d71961885d3bf0f7a9b2e0867b01.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2014-04-28T17:13:00+08:00 ] 112.94.203.151 /home/user/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user` WHERE (  `account`='admin' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2014-04-28T17:13:05+08:00 ] 112.94.203.151 /home/user/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `think_user` WHERE (  `account`='admin' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2014-04-28T17:13:12+08:00 ] 112.94.203.151 /home/user/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `think_user` WHERE (  `account`='admin' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2014-04-28T17:42:04+08:00 ] 180.153.206.21 /home/user/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: Think\Storage\Driver\File::$isLogin E:\wap.sjbmall.net\Runtime\Cache\Home\101a520ac446b48d7a87266436dd71e7.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-04-28T17:42:04+08:00 ] 180.153.206.21 /home/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\CommonController.class.php 第 27 行.
+NOTIC: [8] Undefined index: think_loginInfo E:\wap.sjbmall.net\Application\Home\Controller\UserController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: name E:\wap.sjbmall.net\Runtime\Cache\Home\b171d71961885d3bf0f7a9b2e0867b01.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

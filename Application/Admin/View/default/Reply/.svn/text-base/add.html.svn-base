@@ -1,0 +1,50 @@
+<extend name="Public/base"/>
+
+<block name="style">
+	<script src="__STATIC__/jquery.MultiFile.js" type="text/javascript"></script>
+</block>
+
+<block name="body">
+    <div class="main-title">
+        <h2>测试新增评论</h2>
+    </div>
+    <form action="{:U(add)}" method="post" class="form-horizontal" enctype="multipart/form-data">
+        <div class="form-item">
+            <label class="item-label">用户ID</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="uid" value="1">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">父评论ID</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="pid" value="0">
+            </div>
+        </div>
+		<div class="form-item">
+            <label class="item-label">网评ID</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="rid" value="88">
+            </div>
+        </div>
+		<div class="form-item">
+            <label class="item-label">网评内容</label>
+            <div class="controls">
+				<label class="textarea input-large">
+				<textarea name="content">对啊，我也买了这个东西，质感很差</textarea>
+				</label>
+            </div>
+        </div>
+        <div class="form-item">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav('{:U('Review/index')}');
+    </script>
+</block>

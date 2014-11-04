@@ -1,0 +1,39 @@
+<include file="Public:header"/>
+
+<div id="user_tab">
+	<div class="user_tab_class user_tab_on" name="getindex">个人资料</div><span style="margin:0">|</span>
+	<div class="user_tab_class" name="myReview">我的发布</div><span style="margin:0">|</span>
+	<div class="user_tab_class" name="myMsg">我的消息</div><span style="margin:0">|</span>
+	<div class="user_tab_class" name="myCollect">我的收藏</div>
+</div>
+
+<!-- ajax动态加载模块 Begin -->
+<div>
+	<div id="ajaxmode">
+		
+	</div>
+</div>
+<!-- ajax动态加载模块 End -->
+
+<script type="text/javascript">
+	var tabObj=new Object();
+	tabObj.name="getindex";
+	$.post("__APP__/home/user/"+tabObj.name,{},function(data){
+				$('#ajaxmode').html(data.html);
+			},'json')
+	//tab切换
+	$('.user_tab_class').click(function(){
+		$('#user_tab').children().each(function(){
+			$(this).removeClass("user_tab_on");
+		});
+		$(this).addClass("user_tab_on");
+		tabObj.name=$(this).attr("name");
+		
+		$.post("__APP__/home/user/"+tabObj.name,{},function(data){
+			$('#ajaxmode').html(data.html);
+		},'json')
+		
+	});
+</script>
+
+<include file="Public:footer"/>

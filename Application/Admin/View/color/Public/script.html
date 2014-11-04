@@ -1,0 +1,25 @@
+
+<!-- Core Scripts - Include with every page -->
+<load href="__STATIC__/js/jquery-1.10.2.js"  /> 
+<load href="__STATIC__/js/bootstrap.min.js" /> 
+<load href="__STATIC__/js/plugins/metisMenu/jquery.metisMenu.js" /> 
+
+
+<!-- Page-Level Plugin Scripts - Tables -->
+<load href="__STATIC__/js/plugins/dataTables/jquery.dataTables.js" /> 
+<load href="__STATIC__/js/plugins/dataTables/dataTables.bootstrap.js" /> 
+
+<!-- SB Admin Scripts - Include with every page -->
+<load href="__STATIC__/js/sb-admin.js" />
+
+<!-- Page-Level Demo Scripts - Blank - Use for reference -->
+
+<!--  think JS   ================================================== --> 
+<include file="Public/var"/>
+<load href="__JS__/think.js" />
+<load href="__JS__/common.js" />
+<!--include file="Public/navjs"/-->
+
+<block name="script"><!-- 用于加载js代码 --></block> 
+<!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
+{:hook('pageFooter', 'widget')}

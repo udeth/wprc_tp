@@ -1,0 +1,54 @@
+<extend name="Public:base" />
+
+<block name="title"><title>搜索网评</title></block>
+
+
+<block name="right">
+	<div class="base_right mtop30" style="border:solid 1px #DBDBDB">
+		<div class="fabu_index_left" style="padding:10px;">
+			<p class="mbottom ft18">搜索</p>
+			<input placeholder="请输入产品名/网址/实体店名" type="text" id="content" class="search_input">
+			<img id="search" src="__APP__/Public/static/img/search.jpg" style="vertical-align: middle;height:40px;">
+			<p class="mbottom"></p>
+			<input type="checkbox" style="" id="wangzhi" value="wangzhi">&nbsp;&nbsp;搜网址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="checkbox" id="shiti" value="shiti">&nbsp;&nbsp;搜实体店
+			<p class="mbottom"></p>
+			<p class="ft18">
+				所在地：
+				<select id="s_province" name="s_province"></select>&nbsp;-&nbsp;
+		        <select id="s_city" name="s_city" ></select>&nbsp;-&nbsp;
+		        <select id="s_county" name="s_county"></select>
+		        
+		        <script type="text/javascript">_init_area();</script>
+			</p>
+		</div>
+		<div class="fabu_index_right">
+			<img src="__APP__/Public/static/img/web_logo_big.jpg" style="width:225px" class="mtop15">
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<script type="text/javascript">
+	var url="__APP__/home/index/search?"
+		//执行搜索操作
+		$('#search').click(function(){
+			if($('#shiti').prop("checked")){
+				url+="shiti=1&";
+			}
+			if($('#wangzhi').prop("checked")){
+				url+="wangzhi=1&";
+			}
+			if($('#s_province').val()!="省份"){
+				url+="province="+$('#s_province').val()+"&";
+			}
+			if($('#s_city').val()!="地级市"){
+				url+="city="+$('#s_city').val()+"&";
+			}
+			if($('#s_county').val()!="市、县级市"){
+				url+="county="+$('#s_county').val()+"&";
+			}
+			url+="kword="+$('#content').val()+'&';
+			// alert(url);
+			window.location.href=url;
+		});
+	</script>
+</block>

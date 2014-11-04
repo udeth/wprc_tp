@@ -1,0 +1,188 @@
+<extend name="Public:base" />
+
+<block name="title">
+	<title>网评如潮</title>
+</block>
+
+
+<block name="right">
+	<div class="base_right">
+		<div id="home_index_top">
+			<img src="__APP__/Public/static/img/web_logo_small.jpg" class="img_float_right mtop30">
+			<p class="home_index_tab_on">热点差评</p>
+			<p class="home_index_tab">潮友动态</p>
+		</div>
+		<div id="home_index_bottom">
+			<div id="home_index_hotlist">
+				<volist name="listHot" id="list">
+					<div class="home_index_list">
+						<div style="padding:10px;">
+							<div class="relative">
+								<a href="__APP__/home/user/userIntro?uid={$list.uid}">
+									<if condition="$list.touxiang eq ''">
+										<img src="__APP__/Public/static/img/default_big.jpg" class="homo_list_touxiang">
+									<else />
+										<img src="__APP__/Uploads/Picture/User/{$list.touxiang}"  class="homo_list_touxiang">
+									</if>
+								</a>
+								<div class="absolute home_list_name">
+									<a href="__APP__/home/user/userIntro?uid={$list.uid}">{$list.uname}</a><br>
+									
+								</div>
+							</div>
+							<div style="margin-left:65px;">
+								<div class="mbottom tow_em font18">
+									{$list.content|mb_substr=0,120,'utf-8'}
+								</div>
+								<p class="mbottom">
+									<volist name="list.image" id="arr">
+										<img src="__APP__/{$arr.thumb_img}">&nbsp;&nbsp;&nbsp;
+									</volist>
+								</p>
+								<p class="mbottom goods_color">
+									投诉商品名称：{$list.product_name}
+								</p>
+								<p class="mbottom goods_color">
+									投诉店家名称：{$list.store_name}
+								</p>
+								<p class="mbottom hone_index_address">
+									<if condition="$list.store_type eq 1">
+										<img src="__APP__/Public/static/img/address.jpg" class="img_middle" style="height:25px;">
+										{$list.province}{$list.city}{$list.district}{$list.address}
+									<else />
+										{$list.address}
+									</if>
+								</p>
+								<span class="gry_small">{$list.time|date="Y-m-d h:i:s",###}</span>
+							</div>
+						</div>
+						<a href="__APP__/home/act/reviewInfo?id={$list.id}">
+							<div class="index_list_bottom">
+								<div class="index_list_bottom_div" style="border-right:solid 1px #D5D5D5">
+									<img src="__APP__/Public/static/img/pinglun.jpg" class="img_middle">
+									（{$list.comment_count}）
+								</div>
+								<div class="index_list_bottom_div">
+									<img src="__APP__/Public/static/img/xingxing.jpg" class="img_middle">
+									（{$list.collect_count}）
+								</div>
+							</div>
+						</a>
+					</div>
+				</volist>
+			</div>
+			<div id="home_index_newlist" style="display:none">
+				<volist name="listNew" id="list">
+					<div class="home_index_list">
+						<div style="padding:10px;">
+							<div class="relative">
+								<a href="__APP__/home/user/userIntro?uid={$list.uid}">
+									<if condition="$list.touxiang eq ''">
+										<img src="__APP__/Public/static/img/default_big.jpg" class="homo_list_touxiang">
+									<else />
+										<img src="__APP__/Uploads/Picture/User/{$list.touxiang}"  class="homo_list_touxiang">
+									</if>
+								</a>
+								<div class="absolute home_list_name">
+									<a href="__APP__/home/user/userIntro?uid={$list.uid}">{$list.uname}</a><br>
+									
+								</div>
+							</div>
+							<div style="margin-left:65px;">
+								<div class="mbottom tow_em font18">
+									{$list.content|mb_substr=0,120,'utf-8'}
+								</div>
+								<p class="mbottom">
+									<volist name="list.image" id="arr">
+										<img src="__APP__/{$arr.thumb_img}">&nbsp;&nbsp;&nbsp;
+									</volist>
+								</p>
+								<p class="mbottom goods_color">
+									投诉商品名称：{$list.product_name}
+								</p>
+								<p class="mbottom goods_color">
+									投诉店家名称：{$list.store_name}
+								</p>
+								<p class="mbottom hone_index_address">
+									<if condition="$list.store_type eq 1">
+										<img src="__APP__/Public/static/img/address.jpg" class="img_middle" style="height:25px;">
+										{$list.province}{$list.city}{$list.district}{$list.address}
+									<else />
+										{$list.address}
+									</if>
+								</p>
+								<span class="gry_small">{$list.time|date="Y-m-d h:i:s",###}</span>
+							</div>
+						</div>
+						<a href="__APP__/home/act/reviewInfo?id={$list.id}">
+							<div class="index_list_bottom">
+								<div class="index_list_bottom_div" style="border-right:solid 1px #D5D5D5">
+									<img src="__APP__/Public/static/img/pinglun.jpg" class="img_middle">
+									（{$list.comment_count}）
+								</div>
+								<div class="index_list_bottom_div">
+									<img src="__APP__/Public/static/img/xingxing.jpg" class="img_middle">
+									（{$list.collect_count}）
+								</div>
+							</div>
+						</a>
+					</div>
+				</volist>
+			</div>
+		</div>
+		<div id="home_index_more">查看更多>></div>
+	</div>
+	<script type="text/javascript">
+			//首页加载
+	if($('#home_index_more').length>0){
+		var hotpage=2;
+		var hotclick=1;
+		var newpage=2;
+		var newclick=1;
+		var page=0;
+		var istype;
+		$('#home_index_more').click(function(){
+			if($('.home_index_tab_on').text()=='热点差评'){
+				if(hotclick!=1){
+					return false;
+				}
+				page=hotpage;
+				getmore(page,'hotpage');
+			}else{
+				if(newclick!=1){
+					return false;
+				}
+				page=newpage;
+				getmore(page,'newpage');
+			}
+		});
+		function getmore(page,pagetype){
+			if(pagetype=='hotpage'){
+				istype='hot';
+			}else{
+				istype='new';
+			}
+			$.post('__APP__/home/index/getListMore',{coun:page,istype:istype,listcount:5},function(data){
+				if(data.status==1){
+					if(istype=="new"){
+						newpage++;
+						$('#home_index_newlist').append(data.html);
+					}else{
+						hotpage++;
+						$('#home_index_hotlist').append(data.html);
+					}
+				}else{
+					if(istype=="new"){
+						$('#home_index_newlist').append("<div style='text-align:center;margin-bottom:10px;'>暂无数据</div>");
+						newclick=0;
+					}else{
+						$('#home_index_hotlist').append("<div style='text-align:center;margin-bottom:10px;'>暂无数据</div>");
+						hotclick=0;
+					}
+				}
+			},'json');
+		}
+	}
+
+	</script>
+</block>

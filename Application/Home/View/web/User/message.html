@@ -1,0 +1,80 @@
+<extend name="Public:base" />
+<block name="title"><title>网评如潮</title></block>
+
+<block name="right">
+	<div class="base_right mtop30">
+		<div class="fabu_index_left" style="margin:10px;border:solid 1px #DBDBDB">
+			<div id="masseage_top" align="center">
+				{$uInfo.0.name}
+			</div>
+			<div id="masseage_bottom">
+				<textarea id="content" style="width:96%;margin:0 auto;border:solid 1px #D2D2D2;height:60px;display:block"></textarea> 
+				<p style="width:96%;margin:0 auto;text-align:right;color:#999999">140字</p>
+				<button id="toempty" style="display:block;height:30px;color:white;font-size:18px;background:#FFAA24;width:90px;border:0;float:left;margin-left:2%">清空</button>
+				<button id="send" style="display:block;height:30px;color:white;font-size:18px;background:#18ABF6;width:90px;border:0;float:right;margin-right:2%">发送</button>
+				<div style="clear:both"></div>
+				<!-- <volist name="list" id="list"> -->
+					<div style="margin:0 10px;">	
+						<if condition="$list['add'] eq 1">
+						<div style="margin-bottom:20px;color:#999999">
+							<div style="float:left;text-align:left;width:33%"><del>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</del></div>
+							<div style="float:left;text-align:center;width:33%">{$list.time|date="Y-m-d",###}</div>
+							<div style="float:left;text-align:right;width:33%"><del>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</del></div>
+							<div style="clear:both"></div>
+						</div></if>
+						<p style="color:#A4A2A3;font-size:12px;text-align:center;margin:10px 0">{$list.time|date="h:i:s",###}</p>
+						<img src="__APP__/<?php if($list['type']=='send'){echo empty($myInfo[0]['image'])?'Public/static/img/default_big.jpg':'Uploads/Picture/User/'.$myInfo[0]['image'];}else{echo empty($uInfo[0]['image'])?'Public/static/img/default_big.jpg':'Uploads/Picture/User/'.$uInfo[0]['image'];} ?>" style="float:<?php echo $list['type']=='send'?'right':'left'; ?>;width:18%;min-width:40px;max-width:40px;height:40px;">
+						<if condition="$list['type'] eq 'save'">
+							<div style="border:solid 1px white;float:left;width:82%;position:relative;padding-top:10px;">
+								<div style="position:absolute;width:0;height:0;border:solid 15px #D5D5D5;border-color:transparent #D5D5D5 transparent transparent;top:15px;left:-3px;"></div>
+								<div style="margin:5px 0 20px 20px;">
+									<span style="display:inline-block;text-align:left;background:#D5D5D5;padding:10px;border-radius:5px;">{$list.content}</span>
+								</div>
+							</div>
+						<else />
+							<div style="border:solid 1px white;float:right;width:82%;position:relative;padding-top:10px;">
+								<div style="position:absolute;width:0;height:0;border:solid 15px #D5D5D5;border-color:transparent transparent transparent #D5D5D5;top:15px;right:-3px;"></div>
+								<div style="text-align:right;margin:5px 20px 20px; 0;">
+									<span style="display:inline-block;text-align:left;background:#D5D5D5;padding:10px;border-radius:5px;">{$list.content}</span>
+								</div>
+							</div>
+						</if>
+						<div style="clear:both"></div>
+					</div>
+				<!-- </volist> -->
+			</div>
+		</div>
+		<div class="fabu_index_right">
+			<img src="__APP__/Public/static/img/web_logo_big.jpg" style="width:215px" class="mtop15">
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('#send').click(function(){
+			var content=$('#content').val();
+			if(content==''){
+				alert('内容不能为空');
+				return false;
+			}
+			$.post('__APP__/home/user/sendMessage',{sendId:"<?php echo $myInfo[0]['uid'] ?>",saveId:"<?php echo $uInfo[0]['uid'] ?>",content:content},function(data){
+				if(data.status==1){
+					alert("发送成功！");
+					window.location.href=window.location.href;
+				}else{
+					alert("发送失败！");
+				}
+			},'json')
+		});
+
+		$('#toempty').click(function(){
+			var content=$('#content').val();
+			$.post('__APP__/home/user/toEmpty',{sendId:"<?php echo $myInfo[0]['uid']; ?>",saveId:"<?php echo $uInfo[0]['uid'] ?>"},function(data){
+				if(data.status==1){
+					alert("操作成功！");
+					window.location.href='__APP__/home/user/messageBox';
+				}else{
+					alert("操作失败！");
+				}
+			},'json')
+		});
+	</script>
+</block>
